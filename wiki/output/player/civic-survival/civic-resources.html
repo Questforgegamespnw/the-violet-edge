@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explains how Bellweather tracks and spends critical resources through clocks, surplus, shortage, upkeep, civic actions, and Violet misinterpretation risk.">
+  <title>Resources | Bellweather Records</title>
+  <link rel="stylesheet" href="../assets/css/bellweather.css">
+</head>
+<body class="bw-page bw-page--civic">
+  <div class="bw-site">
+    <header class="bw-masthead">
+      <div>
+        <div class="bw-masthead__eyebrow">Municipal Reference Copy</div>
+        <div class="bw-masthead__title">Bellweather</div>
+        <div class="bw-masthead__subtitle">Records &amp; Emergency Reference</div>
+      </div>
+      <div class="bw-masthead__motto">Hold Fast. Ring True.</div>
+    </header>
+
+    <div class="bw-layout">
+      <aside class="bw-sidebar">
+        <form class="bw-search" action="../search.html">
+          <label for="record-search">Search Records</label>
+          <input id="record-search" name="q" type="search" placeholder="Name, place, incident…">
+        </form>
+        <nav class="bw-nav" aria-label="Bellweather records">
+          
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Introduction</div>
+      
+        <a href="../introduction/intro-premise.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Premise</span>
+        </a>
+      
+        <a href="../introduction/intro-how-to-use.html" >
+          <span class="bw-nav__number">02</span>
+          <span>How to Use This Book</span>
+        </a>
+      
+        <a href="../introduction/intro-campaign-thesis.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Campaign Thesis</span>
+        </a>
+      
+        <a href="../introduction/intro-content-safety.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Content and Safety Notes</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Bellweather</div>
+      
+        <a href="../bellweather/bellweather-town-overview.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Town Overview</span>
+        </a>
+      
+        <a href="../bellweather/bellweather-daily-life.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Daily Life</span>
+        </a>
+      
+        <a href="../bellweather/bellweather-crisis-state.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Crisis State</span>
+        </a>
+      
+        <a href="../bellweather/bellweather-resources-supply.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Resources and Supply</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">The Violet</div>
+      
+        <a href="../the-violet/violet-identity-anchors.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Identity Anchors</span>
+        </a>
+      
+        <a href="../the-violet/violet-specificity-intent.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Specificity and Intent</span>
+        </a>
+      
+        <a href="../the-violet/violet-travel-doctrine.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Travel Doctrine</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Running the Campaign</div>
+      
+        <a href="../running-the-campaign/running-session-loop.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Session Loop</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Civic Survival</div>
+      
+        <a href="../civic-survival/civic-actions.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Civic Actions</span>
+        </a>
+      
+        <a href="../civic-survival/civic-resources.html" aria-current="page">
+          <span class="bw-nav__number">02</span>
+          <span>Resources</span>
+        </a>
+      
+        <a href="../civic-survival/civic-retainers.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Retainers</span>
+        </a>
+      
+        <a href="../civic-survival/civic-records-and-memory.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Records and Civic Memory</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Faith, Dreams &amp; Meaning</div>
+      
+        <a href="../faith-dreams-public-meaning/faith-religion-violet.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Religion and the Violet</span>
+        </a>
+      
+        <a href="../faith-dreams-public-meaning/faith-service-bans.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Service Bans</span>
+        </a>
+      
+        <a href="../faith-dreams-public-meaning/faith-children-violet.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Children and the Violet</span>
+        </a>
+      
+        <a href="../faith-dreams-public-meaning/faith-dream-pressure.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Dream Pressure</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Factions</div>
+      
+        <a href="../factions/faction-lampworkers-union.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Lampworkers’ Union</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Locations</div>
+      
+        <a href="../locations/loc-crow-mill.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Crow Mill / Bellweather Milling Company</span>
+        </a>
+      
+        <a href="../locations/loc-salt-mine.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Decommissioned Salt Mine</span>
+        </a>
+      
+        <a href="../locations/loc-eastgate-old-road.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Eastgate / The Old Road</span>
+        </a>
+      
+        <a href="../locations/loc-gazette-office.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Gazette Office / Radio Room</span>
+        </a>
+      
+        <a href="../locations/loc-harrows-grocery.html" >
+          <span class="bw-nav__number">05</span>
+          <span>Harrow’s Grocery</span>
+        </a>
+      
+        <a href="../locations/loc-mercy-hospital.html" >
+          <span class="bw-nav__number">06</span>
+          <span>Mercy Hospital / Saint Agnes Ward</span>
+        </a>
+      
+        <a href="../locations/loc-old-watchtower.html" >
+          <span class="bw-nav__number">07</span>
+          <span>Old Watchtower</span>
+        </a>
+      
+        <a href="../locations/loc-schoolhouse-library.html" >
+          <span class="bw-nav__number">08</span>
+          <span>Schoolhouse / Public Library</span>
+        </a>
+      
+        <a href="../locations/loc-old-levy.html" >
+          <span class="bw-nav__number">09</span>
+          <span>The Old Levy</span>
+        </a>
+      
+        <a href="../locations/loc-old-wall.html" >
+          <span class="bw-nav__number">10</span>
+          <span>The Old Wall</span>
+        </a>
+      
+        <a href="../locations/loc-town-hall-square.html" >
+          <span class="bw-nav__number">11</span>
+          <span>Town Hall Square</span>
+        </a>
+      
+        <a href="../locations/loc-voss-butcher.html" >
+          <span class="bw-nav__number">12</span>
+          <span>Voss Butcher &amp; Cold Room</span>
+        </a>
+      
+        <a href="../locations/loc-wrenfold-pastures.html" >
+          <span class="bw-nav__number">13</span>
+          <span>Wrenfold Pastures</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Opening the Campaign</div>
+      
+        <a href="../starting-the-campaign/start-character-ties.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Character Ties</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Field References</div>
+      
+        <a href="../appendix/handout-child-safety.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Child Safety Card</span>
+        </a>
+      
+        <a href="../appendix/handout-dream-ledger.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Dream Ledger Entry</span>
+        </a>
+      
+        <a href="../appendix/handout-route-declaration.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Route Declaration</span>
+        </a>
+      
+        <a href="../appendix/quick-session-loop.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Session Loop Quick Reference</span>
+        </a>
+      
+        <a href="../appendix/handout-sleep-intent.html" >
+          <span class="bw-nav__number">05</span>
+          <span>Sleep Intent Card</span>
+        </a>
+      
+    </div>
+  
+        </nav>
+      </aside>
+
+      <main class="bw-main">
+        <article class="bw-content">
+          <div class="bw-breadcrumbs">
+            <a href="../index.html">Archive Index</a>
+            / Civic Survival
+            / Resources
+          </div>
+
+          <header class="bw-record-header">
+            <div class="bw-record-code">Record civic_resources</div>
+            <h1 class="bw-record-title">Resources</h1>
+            <p class="bw-record-deck">Explains how Bellweather tracks and spends critical resources through clocks, surplus, shortage, upkeep, civic actions, and Violet misinterpretation risk.</p>
+            
+    <div class="bw-record-meta">
+      <span class="bw-badge bw-badge--keeper">Partial Public Record</span>
+      <span class="bw-badge">draft</span>
+      <span class="bw-badge">Spoilers: light</span>
+      <span class="bw-badge">Table Use: high</span>
+    </div>
+  
+          </header>
+
+          
+    <aside class="bw-glance">
+      <dl class="bw-glance__grid">
+        
+          <div><dt>Purpose</dt><dd>Explains how Bellweather tracks and spends critical resources through clocks, surplus, shortage, upkeep, civic actions, and Violet misinterpretation risk.</dd></div>
+        
+          <div><dt>Record Type</dt><dd>chapter_section</dd></div>
+        
+          <div><dt>Section</dt><dd>Civic Survival</dd></div>
+        
+          <div><dt>Status</dt><dd>draft</dd></div>
+        
+          <div><dt>Table Use</dt><dd>high</dd></div>
+        
+      </dl>
+    </aside>
+  
+          <h2 id="resources">Resources</h2>
+<p>Bellweather does not begin the campaign empty-handed.</p>
+<p>It has food, lamps, medicine, labor, records, tools, stores, and people who know how to keep a town running.</p>
+<p>That is the point.</p>
+<p>The crisis is not that everything is gone.</p>
+<p>The crisis is that every supply chain has become a question.</p>
+<p>Resources should create decisions, not bookkeeping.</p>
+<hr>
+<h3 id="resource-clocks">Resource Clocks</h3>
+<p>Use resource clocks instead of exact inventory unless the table wants detailed scarcity.</p>
+<p>A 6-segment clock works well.</p>
+<pre><code>0–1 Stable
+2–3 Strained
+4–5 Critical
+6 Crisis / shortage event</code></pre>
+<p>Mark pressure on a resource clock when that resource is heavily used, wasted, damaged, stolen, rationed badly, or becomes central to public panic.</p>
+<p>Reduce pressure when the town protects, replenishes, carefully rations, or successfully replaces that resource.</p>
+<p>When a clock reaches 6, trigger a shortage event.</p>
+<p>After the crisis triggers, reset the clock to 3 if the town partially stabilizes it, or keep it at 6 if the crisis remains unresolved.</p>
+<hr>
+<h3 id="core-resource-clocks">Core Resource Clocks</h3>
+<h4 id="food-grain">Food / Grain</h4>
+<p>Includes stored grain, flour, preserved food, orchard produce, dairy, eggs, vegetables, livestock feed, and ration distribution.</p>
+<p>Use for:</p>
+<ul><li>feeding crowds</li><li>supporting labor crews</li><li>refugee care</li><li>ration lines</li><li>public morale</li><li>long expeditions</li><li>preserving children and patients</li></ul>
+<p>Crisis events:</p>
+<ul><li>ration unrest</li><li>theft</li><li>black market</li><li>hunger dreams</li><li>families hiding food</li><li>the Violet supplies food with unclear origin or cost</li></ul>
+<h4 id="oil-light">Oil / Light</h4>
+<p>Includes lamp oil, kerosene, fuel for lamps, lanterns, hospital lighting, route lights, signal lamps, and emergency night work.</p>
+<p>Use for:</p>
+<ul><li>Eastgate procedures</li><li>night patrols</li><li>hospital operation</li><li>route stabilization</li><li>public safety</li><li>ward lamps</li><li>maintaining confidence after dark</li></ul>
+<p>Crisis events:</p>
+<ul><li>hospital darkness</li><li>route failure</li><li>night panic</li><li>unsafe candles and fires</li><li>lantern theft</li><li>the Violet provides light that does not need fuel but changes what it shines on</li></ul>
+<h4 id="medicine">Medicine</h4>
+<p>Includes bandages, antiseptic, surgical tools, sedatives, painkillers, quarantine supplies, hospital labor, and medical capacity.</p>
+<p>Use for:</p>
+<ul><li>triage</li><li>injuries</li><li>infection</li><li>sleep cases</li><li>birth and death care</li><li>panic casualties</li><li>expedition recovery</li></ul>
+<p>Crisis events:</p>
+<ul><li>triage deaths</li><li>quarantine conflict</li><li>sleep ward failures</li><li>desperate families seeking Violet help</li><li>doctors making impossible choices</li><li>medicine appears with impossible labeling or wrong patients attached</li></ul>
+<h4 id="salt-preservation">Salt / Preservation</h4>
+<p>Includes food preservation, livestock care, old trade stores, curing, ritual use, and boundary folklore if the table uses that layer.</p>
+<p>Use for:</p>
+<ul><li>preserving meat</li><li>protecting food stores</li><li>stabilizing certain folk practices</li><li>boundary rites</li><li>medical and livestock needs</li><li>winter preparation</li></ul>
+<p>Crisis events:</p>
+<ul><li>food spoils</li><li>butcher conflicts</li><li>families hoard preserved goods</li><li>salt becomes symbolically overvalued</li><li>old salt routes become expedition hooks</li><li>the Violet interprets preservation as keeping things unchanged forever</li></ul>
+<h4 id="livestock">Livestock</h4>
+<p>Includes cattle, pigs, chickens, horses, dairy animals, breeding stock, feed, barns, and animal health.</p>
+<p>Use for:</p>
+<ul><li>milk and eggs</li><li>meat</li><li>transport</li><li>morale</li><li>farm continuity</li><li>leather, wool, and labor</li></ul>
+<p>Crisis events:</p>
+<ul><li>disease</li><li>strange births</li><li>animals refuse a route</li><li>livestock wander toward Violet pressure</li><li>culling disputes</li><li>the town argues over killing tomorrow’s survival for today’s food</li></ul>
+<h4 id="fuel-coal">Fuel / Coal</h4>
+<p>Includes coal, wood, gasoline, generator fuel, stove fuel, industrial fuel, and heating.</p>
+<p>Use for:</p>
+<ul><li>heat</li><li>machinery</li><li>hospital power</li><li>Lampworks production</li><li>transport</li><li>winter survival</li><li>emergency manufacturing</li></ul>
+<p>Crisis events:</p>
+<ul><li>cold shelters</li><li>stalled machinery</li><li>industrial shutdown</li><li>carbon monoxide accidents</li><li>fuel theft</li><li>Violet-supplied power arrives with dangerous service logic</li></ul>
+<h4 id="paper-records">Paper / Records</h4>
+<p>Includes paper, ink, forms, printing supplies, ledgers, route cards, ration tickets, school rosters, public notices, and archives.</p>
+<p>Use for:</p>
+<ul><li>route declarations</li><li>ration cards</li><li>identity audits</li><li>public notices</li><li>missing-person lists</li><li>dream ledgers</li><li>legal orders</li><li>witness records</li></ul>
+<p>Crisis events:</p>
+<ul><li>forms rationed</li><li>records degrade</li><li>official notices stop being trusted</li><li>clerks become targets</li><li>false documents gain authority</li><li>the Violet generates perfect paperwork for false things</li></ul>
+<h4 id="labor-fatigue">Labor / Fatigue</h4>
+<p>Includes workers, deputies, nurses, clerks, lampworkers, drivers, farmers, teachers, witnesses, and everyone else asked to keep going.</p>
+<p>Use for:</p>
+<ul><li>repairs</li><li>patrols</li><li>construction</li><li>searches</li><li>hospital shifts</li><li>route offices</li><li>ration distribution</li><li>public order</li></ul>
+<p>Crisis events:</p>
+<ul><li>accidents</li><li>exhaustion</li><li>resentment</li><li>witness collapse</li><li>union refusal</li><li>patrol failures</li><li>shortcuts</li><li>“volunteers” become coerced labor</li></ul>
+<h4 id="public-trust">Public Trust</h4>
+<p>Includes legitimacy, patience, cooperation, belief that decisions are being made fairly, and willingness to follow painful instructions.</p>
+<p>Use for:</p>
+<ul><li>rationing</li><li>curfews</li><li>service bans</li><li>secrecy</li><li>difficult public notices</li><li>quarantine</li><li>route restrictions</li><li>controversial rescue decisions</li></ul>
+<p>Crisis events:</p>
+<ul><li>faction revolt</li><li>underground sermons</li><li>rumor dominance</li><li>crowds at City Hall</li><li>forged notices</li><li>people leave without permission</li><li>public language becomes careless or desperate</li></ul>
+<hr>
+<h3 id="spending-resources">Spending Resources</h3>
+<p>A resource can be spent during a City Mode action.</p>
+<p>Spend 1 relevant resource to:</p>
+<ul><li>add +1 die</li><li>remove one penalty</li><li>allow the action at all</li><li>prevent one minor related consequence</li></ul>
+<p>Spend 2 relevant resources to:</p>
+<ul><li>add +2 dice</li><li>protect against one likely consequence</li><li>make a large action possible</li><li>support multiple workstreams</li></ul>
+<p>Mark the resource clock when it is spent.</p>
+<p>Resource spending should be visible in the fiction.</p>
+<p>If the players spend oil, lamps burn. If they spend labor, people work. If they spend public trust, someone accepts a hard order now and remembers it later.</p>
+<hr>
+<h3 id="surplus">Surplus</h3>
+<p>Surplus is a temporary advantage.</p>
+<p>If a resource is in unusually good shape, mark it as Surplus.</p>
+<p>Examples:</p>
+<ul><li>Food Surplus</li><li>Oil Surplus</li><li>Medical Surplus</li><li>Paper Surplus</li><li>Labor Surplus</li><li>Trust Surplus</li></ul>
+<p>A Surplus can be spent once for:</p>
+<ul><li>+2 dice</li><li>+1 die and prevent a related consequence</li><li>allow a major project without ticking the resource clock</li><li>cancel a related Critical penalty for one action</li></ul>
+<p>Then remove the Surplus.</p>
+<p>Surplus should feel valuable, but not permanent.</p>
+<hr>
+<h3 id="shortage">Shortage</h3>
+<p>If a resource clock is critical or maxed, it creates penalties.</p>
+<ul><li><strong>Strained:</strong> no penalty, but spending is risky.</li><li><strong>Critical:</strong> -1 die to actions relying on that resource.</li><li><strong>Crisis:</strong> the action may be impossible without substitute supply, sacrifice, trade, expedition, or dangerous Violet-facing request.</li></ul>
+<p>Examples:</p>
+<ul><li>Oil Critical: -1 to expedition, gate, hospital-night, and lamp-grid actions.</li><li>Paper Critical: -1 to records, public notices, route declarations, and identity audits.</li><li>Trust Critical: -1 to curfews, rationing, service bans, and public language campaigns.</li><li>Labor Critical: -1 to patrols, construction, repairs, searches, hauling, and barricades.</li></ul>
+<hr>
+<h3 id="upkeep">Upkeep</h3>
+<p>At the end of each City Mode loop, ask what Bellweather relied on.</p>
+<p>Mark 1 pressure on each resource that was heavily used:</p>
+<ul><li><strong>Food</strong>, if the loop covered feeding crowds, refugees, labor crews, or ration strain.</li><li><strong>Oil / Light</strong>, if routes, gates, hospital wards, or night patrols were active.</li><li><strong>Medicine</strong>, if there were injuries, illness, surgery, sleep cases, or panic casualties.</li><li><strong>Paper / Records</strong>, if the town issued notices, route forms, ration cards, audits, or identity records.</li><li><strong>Labor</strong>, if crews worked dangerous shifts, patrols, repairs, searches, or construction.</li><li><strong>Public Trust</strong>, if the town used secrecy, force, rationing, bans, curfews, or controversial orders.</li></ul>
+<p>If a resource was protected, replenished, or carefully managed during the loop, do not mark pressure.</p>
+<p>If a resource was the focus of a successful civic action, reduce its pressure by 1 or create a temporary Surplus.</p>
+<p>The GM does not need to run an economy every loop.</p>
+<p>Ask what the town leaned on.</p>
+<hr>
+<h3 id="violet-resource-misreads">Violet Resource Misreads</h3>
+<p>The Violet hears need.</p>
+<p>Resource shortages are therefore dangerous.</p>
+<p>When the town publicly says:</p>
+<blockquote><p>We need food.</p><p>We need power.</p><p>We need medicine.</p><p>We need safety.</p><p>We need workers.</p><p>We need the dead remembered.</p></blockquote>
+<p>the Violet may answer the literal, symbolic, emotional, or civic meanings of those words.</p>
+<p>Examples:</p>
+<ul><li>Food arrives, but it is tied to debt, offering, replacement, or living source.</li><li>Power arrives as electricity, authority, control, debt service, or obedience.</li><li>Medicine arrives as sleep, sedation, preservation, or removal of distress.</li><li>Safety arrives as locked doors, sealed streets, or people kept from leaving.</li><li>Workers arrive as role-made entities, false returnees, or exhausted dead.</li><li>Memory arrives as records that refuse to let grief change.</li></ul>
+<p>Resource actions should always define limits.</p>
+<p>A safer resource declaration names quantity, purpose, duration, source constraints, consent, and end condition.</p>
+<hr>
+<h3 id="civic-action-secure-a-resource">Civic Action: Secure a Resource</h3>
+<p>Use when the town attempts to gain, protect, ration, transport, reclaim, or substitute a critical resource.</p>
+<p>Define:</p>
+<ul><li>the resource</li><li>current clock state</li><li>who needs it most</li><li>who controls it</li><li>who will object</li><li>what it will be spent on</li><li>what is not acceptable as a substitute</li><li>what happens if it fails</li></ul>
+<p>This action may be resolved through City Mode if it can be handled internally.</p>
+<p>It may trigger Expedition Mode if the resource is outside stable Bellweather.</p>
+<hr>
+<h3 id="core-principle">Core Principle</h3>
+<blockquote><p>Scarcity is not only what Bellweather lacks.</p><p>Scarcity is what Bellweather is tempted to ask for badly.</p></blockquote>
+          
+    <section>
+      <h2>Related Records</h2>
+      <div class="bw-card-grid">
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Bellweather</div>
+            <h3 class="bw-card__title"><a href="../bellweather/bellweather-resources-supply.html">Resources and Supply</a></h3>
+            <p>Establishes what Bellweather can produce locally, what it depends on importing, why the town is not self-sufficient, and how resource scarcity becomes a civic and Violet-facing pressure.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Running the Campaign</div>
+            <h3 class="bw-card__title"><a href="../running-the-campaign/running-session-loop.html">Session Loop</a></h3>
+            <p>Provides the repeatable table procedure for Bellweather: city briefing, council slots, civic action resolution, mission framing, expedition play, resource upkeep, and return consequences.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Civic Survival</div>
+            <h3 class="bw-card__title"><a href="../civic-survival/civic-actions.html">Civic Actions</a></h3>
+            <p>Defines the major civic action categories Bellweather can pursue, explains how town-scale action differs from character-scale action, and gives examples of actions, declarations, risks, and outcomes.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Civic Survival</div>
+            <h3 class="bw-card__title"><a href="../civic-survival/civic-retainers.html">Retainers</a></h3>
+            <p>Explains how to use lightweight retainers, crews, deputies, clerks, workers, and specialists as civic extensions of Bellweather during dangerous missions and town-scale actions.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Civic Survival</div>
+            <h3 class="bw-card__title"><a href="../civic-survival/civic-records-and-memory.html">Records and Civic Memory</a></h3>
+            <p>Explains why Bellweather's records, clerks, ledgers, rosters, maps, archives, and witnesses function as continuity infrastructure inside the Violet.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Locations</div>
+            <h3 class="bw-card__title"><a href="../locations/loc-crow-mill.html">Crow Mill / Bellweather Milling Company</a></h3>
+            <p>Cross-referenced municipal record.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Locations</div>
+            <h3 class="bw-card__title"><a href="../locations/loc-harrows-grocery.html">Harrow’s Grocery</a></h3>
+            <p>Cross-referenced municipal record.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Locations</div>
+            <h3 class="bw-card__title"><a href="../locations/loc-salt-mine.html">Decommissioned Salt Mine</a></h3>
+            <p>Cross-referenced municipal record.</p>
+          </article>
+        
+      </div>
+    </section>
+  
+
+          <footer class="bw-record-footer">
+            <div class="bw-record-footer__links">
+              <a href="../civic-survival/civic-actions.html">← Civic Actions</a>
+              <a href="../civic-survival/civic-retainers.html">Retainers →</a>
+            </div>
+            <div class="bw-record-footer__stamp">
+              Bellweather municipal reference · draft · civic_resources
+            </div>
+          </footer>
+        </article>
+      </main>
+    </div>
+  </div>
+  <script src="../assets/js/search.js" defer></script>
+</body>
+</html>

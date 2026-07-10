@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explains Bellweather's town-scale play mode: civic authority, declarations, civic actions, retainers, public interpretation, and how the town makes meaningful choices between expeditions. Detailed slot economy and dice procedures live in the Session Loop.">
+  <title>City Mode | Bellweather Records</title>
+  <link rel="stylesheet" href="../assets/css/bellweather.css">
+</head>
+<body class="bw-page bw-page--civic">
+  <div class="bw-site">
+    <header class="bw-masthead">
+      <div>
+        <div class="bw-masthead__eyebrow">Municipal Reference Copy</div>
+        <div class="bw-masthead__title">Bellweather</div>
+        <div class="bw-masthead__subtitle">Records &amp; Emergency Reference</div>
+      </div>
+      <div class="bw-masthead__motto">Hold Fast. Ring True.</div>
+    </header>
+
+    <div class="bw-layout">
+      <aside class="bw-sidebar">
+        <form class="bw-search" action="../search.html">
+          <label for="record-search">Search Records</label>
+          <input id="record-search" name="q" type="search" placeholder="Name, place, incident…">
+        </form>
+        <nav class="bw-nav" aria-label="Bellweather records">
+          
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Introduction</div>
+      
+        <a href="../introduction/intro-premise.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Premise</span>
+        </a>
+      
+        <a href="../introduction/intro-how-to-use.html" >
+          <span class="bw-nav__number">02</span>
+          <span>How to Use This Book</span>
+        </a>
+      
+        <a href="../introduction/intro-campaign-thesis.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Campaign Thesis</span>
+        </a>
+      
+        <a href="../introduction/intro-content-safety.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Content and Safety Notes</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Bellweather</div>
+      
+        <a href="../bellweather/bellweather-town-overview.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Town Overview</span>
+        </a>
+      
+        <a href="../bellweather/bellweather-daily-life.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Daily Life</span>
+        </a>
+      
+        <a href="../bellweather/bellweather-crisis-state.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Crisis State</span>
+        </a>
+      
+        <a href="../bellweather/bellweather-resources-supply.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Resources and Supply</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">The Violet</div>
+      
+        <a href="../the-violet/violet-core-metaphysics.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Core Metaphysics</span>
+        </a>
+      
+        <a href="../the-violet/violet-caretaker-model.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Caretaker Model</span>
+        </a>
+      
+        <a href="../the-violet/violet-identity-anchors.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Identity Anchors</span>
+        </a>
+      
+        <a href="../the-violet/violet-specificity-intent.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Specificity and Intent</span>
+        </a>
+      
+        <a href="../the-violet/violet-travel-doctrine.html" >
+          <span class="bw-nav__number">05</span>
+          <span>Travel Doctrine</span>
+        </a>
+      
+        <a href="../the-violet/violet-dreams.html" >
+          <span class="bw-nav__number">06</span>
+          <span>Dreams</span>
+        </a>
+      
+        <a href="../the-violet/violet-home-return.html" >
+          <span class="bw-nav__number">07</span>
+          <span>Home and Return</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Running the Campaign</div>
+      
+        <a href="../running-the-campaign/running-coc-integration.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Call of Cthulhu Integration</span>
+        </a>
+      
+        <a href="../running-the-campaign/running-city-mode.html" aria-current="page">
+          <span class="bw-nav__number">02</span>
+          <span>City Mode</span>
+        </a>
+      
+        <a href="../running-the-campaign/running-expedition-mode.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Expedition Mode</span>
+        </a>
+      
+        <a href="../running-the-campaign/running-session-loop.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Session Loop</span>
+        </a>
+      
+        <a href="../running-the-campaign/running-alternate-game-systems.html" >
+          <span class="bw-nav__number">05</span>
+          <span>Alternate Game Systems</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Civic Survival</div>
+      
+        <a href="../civic-survival/civic-actions.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Civic Actions</span>
+        </a>
+      
+        <a href="../civic-survival/civic-trackers.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Trackers</span>
+        </a>
+      
+        <a href="../civic-survival/civic-resources.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Resources</span>
+        </a>
+      
+        <a href="../civic-survival/civic-retainers.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Retainers</span>
+        </a>
+      
+        <a href="../civic-survival/civic-records-and-memory.html" >
+          <span class="bw-nav__number">05</span>
+          <span>Records and Civic Memory</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Faith, Dreams &amp; Meaning</div>
+      
+        <a href="../faith-dreams-public-meaning/faith-religion-violet.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Religion and the Violet</span>
+        </a>
+      
+        <a href="../faith-dreams-public-meaning/faith-public-interpretation-matrix.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Public Interpretation Matrix</span>
+        </a>
+      
+        <a href="../faith-dreams-public-meaning/faith-service-bans.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Service Bans</span>
+        </a>
+      
+        <a href="../faith-dreams-public-meaning/faith-children-violet.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Children and the Violet</span>
+        </a>
+      
+        <a href="../faith-dreams-public-meaning/faith-dream-pressure.html" >
+          <span class="bw-nav__number">05</span>
+          <span>Dream Pressure</span>
+        </a>
+      
+        <a href="../faith-dreams-public-meaning/faith-lucid-dreaming.html" >
+          <span class="bw-nav__number">06</span>
+          <span>Lucid Dreaming</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Npcs</div>
+      
+        <a href="../npcs/npc-dr-helena-cross.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Dr. Helena Cross</span>
+        </a>
+      
+        <a href="../npcs/npc-mayor-edith-vale.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Mayor Edith Vale</span>
+        </a>
+      
+        <a href="../npcs/npc-ruthie-marr.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Ruthie Marr</span>
+        </a>
+      
+        <a href="../npcs/npc-sister-agnes-rowe.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Sister Agnes Rowe</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Factions</div>
+      
+        <a href="../factions/faction-emergency-civic-committee.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Emergency Civic Committee</span>
+        </a>
+      
+        <a href="../factions/faction-faith-coalition.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Faith Coalition</span>
+        </a>
+      
+        <a href="../factions/faction-lampworkers-union.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Lampworkers’ Union</span>
+        </a>
+      
+        <a href="../factions/faction-society-answered.html" >
+          <span class="bw-nav__number">04</span>
+          <span>The Society of the Answered</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Locations</div>
+      
+        <a href="../locations/loc-crow-mill.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Crow Mill / Bellweather Milling Company</span>
+        </a>
+      
+        <a href="../locations/loc-salt-mine.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Decommissioned Salt Mine</span>
+        </a>
+      
+        <a href="../locations/loc-eastgate-old-road.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Eastgate / The Old Road</span>
+        </a>
+      
+        <a href="../locations/loc-gazette-office.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Gazette Office / Radio Room</span>
+        </a>
+      
+        <a href="../locations/loc-harrows-grocery.html" >
+          <span class="bw-nav__number">05</span>
+          <span>Harrow’s Grocery</span>
+        </a>
+      
+        <a href="../locations/loc-mercy-hospital.html" >
+          <span class="bw-nav__number">06</span>
+          <span>Mercy Hospital / Saint Agnes Ward</span>
+        </a>
+      
+        <a href="../locations/loc-old-watchtower.html" >
+          <span class="bw-nav__number">07</span>
+          <span>Old Watchtower</span>
+        </a>
+      
+        <a href="../locations/loc-schoolhouse-library.html" >
+          <span class="bw-nav__number">08</span>
+          <span>Schoolhouse / Public Library</span>
+        </a>
+      
+        <a href="../locations/loc-old-levy.html" >
+          <span class="bw-nav__number">09</span>
+          <span>The Old Levy</span>
+        </a>
+      
+        <a href="../locations/loc-old-wall.html" >
+          <span class="bw-nav__number">10</span>
+          <span>The Old Wall</span>
+        </a>
+      
+        <a href="../locations/loc-town-hall-square.html" >
+          <span class="bw-nav__number">11</span>
+          <span>Town Hall Square</span>
+        </a>
+      
+        <a href="../locations/loc-voss-butcher.html" >
+          <span class="bw-nav__number">12</span>
+          <span>Voss Butcher &amp; Cold Room</span>
+        </a>
+      
+        <a href="../locations/loc-wrenfold-pastures.html" >
+          <span class="bw-nav__number">13</span>
+          <span>Wrenfold Pastures</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Manifestations</div>
+      
+        <a href="../monsters-manifestations/monster-memory-predators.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Memory Predators</span>
+        </a>
+      
+        <a href="../monsters-manifestations/monster-doctrine.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Monster Doctrine</span>
+        </a>
+      
+        <a href="../monsters-manifestations/monster-role-made.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Role-Made Monsters</span>
+        </a>
+      
+        <a href="../monsters-manifestations/monster-sample-manifestations.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Sample Manifestations</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Trouble Files</div>
+      
+        <a href="../trouble-webs/trouble-service-rendered.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Service Rendered</span>
+        </a>
+      
+        <a href="../trouble-webs/trouble-child-violet-house.html" >
+          <span class="bw-nav__number">02</span>
+          <span>The Child in the Violet House</span>
+        </a>
+      
+        <a href="../trouble-webs/trouble-gentle-sleep.html" >
+          <span class="bw-nav__number">03</span>
+          <span>The Gentle Sleep</span>
+        </a>
+      
+        <a href="../trouble-webs/trouble-old-wall-holds.html" >
+          <span class="bw-nav__number">04</span>
+          <span>The Old Wall Holds</span>
+        </a>
+      
+        <a href="../trouble-webs/trouble-water-remembers.html" >
+          <span class="bw-nav__number">05</span>
+          <span>The Water Remembers</span>
+        </a>
+      
+        <a href="../trouble-webs/seed-wrong-street-sign.html" >
+          <span class="bw-nav__number">06</span>
+          <span>Wrong Street Sign</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Opening the Campaign</div>
+      
+        <a href="../starting-the-campaign/start-character-ties.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Character Ties</span>
+        </a>
+      
+        <a href="../starting-the-campaign/start-first-session.html" >
+          <span class="bw-nav__number">02</span>
+          <span>First Session</span>
+        </a>
+      
+        <a href="../starting-the-campaign/start-opening-situation.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Opening Situation</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Teaching Home</div>
+      
+        <a href="../endgame/endgame-final-anchors.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Final Anchors</span>
+        </a>
+      
+        <a href="../endgame/endgame-possible-endings.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Possible Endings</span>
+        </a>
+      
+        <a href="../endgame/endgame-teaching-home.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Teaching Home</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Field References</div>
+      
+        <a href="../appendix/handout-child-safety.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Child Safety Card</span>
+        </a>
+      
+        <a href="../appendix/handout-dream-ledger.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Dream Ledger Entry</span>
+        </a>
+      
+        <a href="../appendix/tracker-dream-pressure.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Dream Pressure Tracker</span>
+        </a>
+      
+        <a href="../appendix/tracker-signal-leak.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Personal Signal Leak Sheet</span>
+        </a>
+      
+        <a href="../appendix/tracker-public-interpretation.html" >
+          <span class="bw-nav__number">05</span>
+          <span>Public Interpretation Matrix Sheet</span>
+        </a>
+      
+        <a href="../appendix/handout-route-declaration.html" >
+          <span class="bw-nav__number">06</span>
+          <span>Route Declaration</span>
+        </a>
+      
+        <a href="../appendix/quick-session-loop.html" >
+          <span class="bw-nav__number">07</span>
+          <span>Session Loop Quick Reference</span>
+        </a>
+      
+        <a href="../appendix/handout-sleep-intent.html" >
+          <span class="bw-nav__number">08</span>
+          <span>Sleep Intent Card</span>
+        </a>
+      
+        <a href="../appendix/quick-gentle-sleep.html" >
+          <span class="bw-nav__number">09</span>
+          <span>The Gentle Sleep One-Page Reference</span>
+        </a>
+      
+        <a href="../appendix/quick-violet-response-matrix.html" >
+          <span class="bw-nav__number">10</span>
+          <span>Violet Response Matrix Quick Reference</span>
+        </a>
+      
+    </div>
+  
+        </nav>
+      </aside>
+
+      <main class="bw-main">
+        <article class="bw-content">
+          <div class="bw-breadcrumbs">
+            <a href="../index.html">Archive Index</a>
+            / Running the Campaign
+            / City Mode
+          </div>
+
+          <header class="bw-record-header">
+            <div class="bw-record-code">Record running_city_mode</div>
+            <h1 class="bw-record-title">City Mode</h1>
+            <p class="bw-record-deck">Explains Bellweather's town-scale play mode: civic authority, declarations, civic actions, retainers, public interpretation, and how the town makes meaningful choices between expeditions. Detailed slot economy and dice procedures live in the Session Loop.</p>
+            
+    <div class="bw-record-meta">
+      <span class="bw-badge bw-badge--keeper">Keeper File</span>
+      <span class="bw-badge">draft</span>
+      <span class="bw-badge">Spoilers: gm_only</span>
+      <span class="bw-badge">Table Use: medium</span>
+    </div>
+  
+          </header>
+
+          
+    <aside class="bw-glance">
+      <dl class="bw-glance__grid">
+        
+          <div><dt>Purpose</dt><dd>Explains Bellweather's town-scale play mode: civic authority, declarations, civic actions, retainers, public interpretation, and how the town makes meaningful choices between expeditions. Detailed slot economy and dice procedures live in the Session Loop.</dd></div>
+        
+          <div><dt>Record Type</dt><dd>gm_guidance</dd></div>
+        
+          <div><dt>Section</dt><dd>Running the Campaign</dd></div>
+        
+          <div><dt>Status</dt><dd>draft</dd></div>
+        
+          <div><dt>Table Use</dt><dd>medium</dd></div>
+        
+      </dl>
+    </aside>
+  
+          <h2 id="city-mode">City Mode</h2>
+<p>City Mode is the town-scale layer of <strong>Bellweather / The Violet Edge</strong>.</p>
+<p>It covers what happens when the players are not only asking:</p>
+<blockquote><p>What does my investigator do?</p></blockquote>
+<p>but also:</p>
+<blockquote><p>What does Bellweather do?</p></blockquote>
+<p>City Mode is where the players respond to shortages, public panic, factions, missing people, institutional strain, dangerous language, resource allocation, and what the town is teaching the Violet.</p>
+<p>The character rules handle personal action.</p>
+<p>City Mode handles civic action.</p>
+<p>The detailed table procedure for Council Slots, d10 civic pools, character support rolls, resource clocks, upkeep, and expedition triggers lives in <code>04_session_loop.md</code>.</p>
+<hr>
+<h3 id="what-city-mode-is-for">What City Mode Is For</h3>
+<p>Use City Mode when the problem is larger than one room, one clue, or one character.</p>
+<p>City Mode handles:</p>
+<ul><li>emergency committee meetings</li><li>rationing decisions</li><li>public notices</li><li>route authorizations</li><li>missing person lists</li><li>resource projects</li><li>institutional triage</li><li>district stabilization</li><li>faction demands</li><li>dream reporting</li><li>religious assembly disputes</li><li>Violet Response Matrix updates</li><li>town tracker movement</li></ul>
+<p>City Mode should be visible in the room. If Bellweather is calm, citizens ask careful questions. If Bellweather is stressed, crowds gather outside City Hall. If Bellweather is near breaking, ignored problems send people, factions, rumors, or consequences directly to the council table.</p>
+<p>The players are deciding what the town can afford to care about today.</p>
+<hr>
+<h3 id="character-mode-vs-city-mode">Character Mode vs. City Mode</h3>
+<p>Use normal character rules when a specific character's personal action is the dramatic focus.</p>
+<p>Use City Mode when Bellweather acts through institutions, crews, public systems, factions, retainers, or civic projects.</p>
+<p>A useful distinction:</p>
+<ul><li><strong>Character Mode</strong> answers: &quot;Can this person do the thing?&quot;</li><li><strong>City Mode</strong> answers: &quot;Can the town make this work under pressure?&quot;</li></ul>
+<p>Examples of Character Mode:</p>
+<ul><li>a doctor performs emergency surgery</li><li>a reporter persuades the Gazette editor</li><li>a deputy questions a returned survivor</li><li>a clerk spots a false name in a ledger</li><li>an engineer repairs a single generator</li><li>an investigator interprets a dream symbol</li></ul>
+<p>Examples of City Mode:</p>
+<ul><li>Town Hall organizes a missing-person audit</li><li>the hospital triages a sleep ward</li><li>the Gazette launches a rumor-correction campaign</li><li>Eastgate revises route procedures</li><li>the Lampworks repairs the lantern grid</li><li>the town secures ration distribution</li><li>the Emergency Civic Committee restricts unsafe public assembly</li></ul>
+<p>If both matter, make a character roll first to create an advantage or complication, then resolve the wider action through the Session Loop procedure.</p>
+<hr>
+<h3 id="main-characters-and-away-mission-retainers">Main Characters and Away-Mission Retainers</h3>
+<p>One strong way to run Bellweather is to separate <strong>civic main characters</strong> from <strong>away-mission characters</strong>.</p>
+<p>In this mode, each player's primary character is someone with real civic responsibility in Bellweather:</p>
+<ul><li>doctor</li><li>sheriff or deputy captain</li><li>Gazette editor</li><li>school principal</li><li>union representative</li><li>town clerk</li><li>priest, rabbi, imam, or spiritual leader</li><li>hospital administrator</li><li>lampworks foreman</li><li>emergency committee member</li><li>occult researcher</li><li>quartermaster</li><li>militia organizer</li><li>engineer</li><li>mayoral aide</li><li>family elder or neighborhood organizer</li></ul>
+<p>These main characters make town-scale decisions, argue in council, direct resources, interpret reports, manage public fear, and decide what Bellweather is willing to risk.</p>
+<p>For expeditions beyond safe civic ground, players may create or choose retainers, deputies, guards, workers, scouts, nurses, clerks, drivers, lantern-bearers, or specialists tied to their main characters.</p>
+<p>The main character decides:</p>
+<ul><li>who is sent</li><li>what the mission is</li><li>what authority they carry</li><li>what resources they receive</li><li>what route declaration they use</li><li>what risks are acceptable</li><li>what must be brought back</li><li>what the town will do if they do not return</li></ul>
+<p>The away-mission character experiences the danger directly.</p>
+<p>This structure makes Bellweather feel larger than the party. It also makes loss meaningful without always removing the player's primary civic voice from the campaign.</p>
+<p>A retainer is not a spare life.</p>
+<p>A retainer is someone Bellweather trusted.</p>
+<hr>
+<h3 id="civic-authority-and-responsibility">Civic Authority and Responsibility</h3>
+<p>City Mode works best when authority is real but incomplete.</p>
+<p>The players may sit on the Emergency Civic Committee, advise it, pressure it, represent institutions within it, or become the people everyone turns toward when normal authority begins to fail.</p>
+<p>They should have enough authority to make meaningful decisions, but not so much that the town becomes a board game they control from above.</p>
+<p>Good civic authority creates obligations:</p>
+<ul><li>A doctor can demand hospital priority, but must answer for who goes untreated.</li><li>A deputy can close a gate, but must answer to families of the missing.</li><li>A Gazette editor can shape public language, but cannot control every rumor.</li><li>A union leader can mobilize workers, but cannot spend their lives like tools.</li><li>A spiritual leader can calm fear, but must not give the Violet a dangerous role.</li><li>A town clerk can preserve names, but must not reduce people to entries.</li></ul>
+<p>The point is not to make the players bureaucrats.</p>
+<p>The point is to make every civic choice personal.</p>
+<hr>
+<h3 id="civic-actions">Civic Actions</h3>
+<p>A civic action is a town-scale attempt to change the situation.</p>
+<p>Examples:</p>
+<ul><li>Audit the records.</li><li>Stabilize a district.</li><li>Secure a resource site.</li><li>Issue a public notice.</li><li>Restrict unsafe assembly.</li><li>Organize a rescue mission.</li><li>Establish witness clerks.</li><li>Repair the lamp network.</li><li>Publish rumor corrections.</li><li>Protect the school roster.</li><li>Investigate a supplied service.</li></ul>
+<p>The full action list belongs in <code>05_civic_survival/01_civic_actions.md</code>.</p>
+<p>City Mode explains why those actions matter and what they mean inside the Violet.</p>
+<p>A civic action should define:</p>
+<ol><li><strong>Decision-Maker</strong> — Which main character, institution, or faction sponsors or authorizes the action?</li><li><strong>Objective</strong> — What is the town trying to accomplish?</li><li><strong>Personnel</strong> — Which main characters, retainers, specialists, or guards are involved?</li><li><strong>Resources</strong> — What supplies, authority, records, lanterns, vehicles, or favors are committed?</li><li><strong>Public Framing</strong> — What does the town think this action means?</li><li><strong>Violet Risk</strong> — What vague need, fear, or public phrase might the Violet answer badly?</li><li><strong>Return or Completion Condition</strong> — What counts as success, failure, or safe return?</li></ol>
+<p>The exact slot economy and dice procedure for civic actions is handled in <code>04_session_loop.md</code>.</p>
+<hr>
+<h3 id="declarations-matter">Declarations Matter</h3>
+<p>City Mode declarations are not magical commands, but they matter because Bellweather is inside the Violet.</p>
+<p>When the Emergency Civic Committee, Gazette, clergy, school, hospital, union, or route office declares something publicly, that declaration can become interpretive infrastructure.</p>
+<p>A declaration may:</p>
+<ul><li>clarify intent</li><li>reduce panic</li><li>stabilize a procedure</li><li>accidentally officialize a dangerous belief</li><li>shift public interpretation</li><li>define who counts</li><li>define who is missing</li><li>define what is forbidden</li><li>define what the town is asking from the Violet</li></ul>
+<p>A good City Mode declaration is:</p>
+<ul><li>specific</li><li>witnessed</li><li>limited</li><li>affirmative</li><li>grounded in records</li><li>clear about who is included</li><li>careful about what it refuses to name</li></ul>
+<p>A bad declaration is:</p>
+<ul><li>vague</li><li>fear-centered</li><li>punitive</li><li>category-based</li><li>publicly amplified without safer language</li><li>too broad for the Violet to interpret safely</li></ul>
+<p>The safest civic declaration is not silent.</p>
+<p>It is disciplined.</p>
+<hr>
+<h3 id="public-interpretation-pressure">Public Interpretation Pressure</h3>
+<p>Every major civic decision should ask:</p>
+<blockquote><p>What does this teach the public?</p></blockquote>
+<blockquote><p>What does this teach the Violet?</p></blockquote>
+<p>Examples:</p>
+<ul><li>A harsh curfew may teach that safety means control.</li><li>A public ration ledger may teach that need is a clerical category.</li><li>A sermon ban without pastoral care may teach that faith is dangerous silence.</li><li>A successful rescue may teach that specificity works.</li><li>A fake survivor accepted for morale may teach that relief matters more than continuity.</li></ul>
+<p>Use the Violet Response Matrix when public meaning changes.</p>
+<p>Practical success does not automatically mean metaphysical success.</p>
+<hr>
+<h3 id="city-mode-scene-types">City Mode Scene Types</h3>
+<p>Useful City Mode scenes include:</p>
+<ul><li>emergency committee meetings</li><li>ration lines</li><li>Gazette editorial debates</li><li>route office arguments</li><li>hospital triage</li><li>school roster calls</li><li>church basement disputes</li><li>union hall votes</li><li>market shortages</li><li>witness assemblies</li><li>public map revisions</li><li>funeral and memorial decisions</li><li>returned-person hearings</li></ul>
+<p>These scenes should be playable, not just narrated.</p>
+<p>Let characters argue, persuade, discover, compromise, and make promises.</p>
+<hr>
+<h3 id="expedition-triggers">Expedition Triggers</h3>
+<p>Not every civic action creates an expedition.</p>
+<p>An expedition is triggered only when the action cannot be completed from town and must be resolved through direct danger, investigation, travel, or contact with the Violet.</p>
+<p>No expedition is usually needed for:</p>
+<ul><li>issuing ration policy</li><li>auditing records</li><li>holding a council debate</li><li>publishing safer language</li><li>reassigning hospital staff</li><li>repairing known lamps inside town</li></ul>
+<p>An expedition may be needed for:</p>
+<ul><li>confirming whether Crow Mill still exists</li><li>recovering a missing orchard patrol</li><li>escorting fuel from an outlying depot</li><li>investigating a supplied building</li><li>entering a dream contact site</li><li>reopening Eastgate route marker three</li></ul>
+<p>City Mode decides what must be done.</p>
+<p>Expedition Mode discovers what that decision costs.</p>
+<hr>
+<h3 id="civic-success-and-failure">Civic Success and Failure</h3>
+<p>Avoid binary civic outcomes when possible.</p>
+<p>A civic action can:</p>
+<ul><li>succeed cleanly</li><li>succeed with cost</li><li>succeed publicly but fail privately</li><li>fail practically but reveal truth</li><li>stabilize the town while teaching the Violet the wrong lesson</li><li>solve a resource problem while creating a moral problem</li><li>calm the public while empowering a faction</li></ul>
+<p>City Mode is strongest when practical success does not automatically mean metaphysical success.</p>
+<hr>
+<h3 id="what-the-gm-tracks-during-city-mode">What the GM Tracks During City Mode</h3>
+<p>Track only what matters this session.</p>
+<p>Suggested active tracking:</p>
+<ul><li>one resource clock</li><li>one civic tracker</li><li>one public interpretation axis</li><li>one faction pressure</li><li>one unresolved Violet consequence</li><li>one future expedition hook</li></ul>
+<p>Too many trackers will bury the table.</p>
+<p>Use trackers as prompts for consequences, not as accounting homework.</p>
+<hr>
+<h3 id="core-principle">Core Principle</h3>
+<blockquote><p>City Mode turns Bellweather's needs into choices.</p><p>Choices create public meaning.</p><p>Public meaning teaches the Violet.</p></blockquote>
+          
+    <section>
+      <h2>Related Records</h2>
+      <div class="bw-card-grid">
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Running the Campaign</div>
+            <h3 class="bw-card__title"><a href="../running-the-campaign/running-coc-integration.html">Call of Cthulhu Integration</a></h3>
+            <p>Explains why Call of Cthulhu-style play is the default engine for Bellweather, how to frame investigators, and how to layer Continuity Stress and civic consequences onto normal investigative horror play.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Running the Campaign</div>
+            <h3 class="bw-card__title"><a href="../running-the-campaign/running-expedition-mode.html">Expedition Mode</a></h3>
+            <p>Explains how to run character-scale missions beyond stable Bellweather: route declarations, travel pressure, clue scenes, resource retrieval, missing persons, and return consequences.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Running the Campaign</div>
+            <h3 class="bw-card__title"><a href="../running-the-campaign/running-session-loop.html">Session Loop</a></h3>
+            <p>Provides the repeatable table procedure for Bellweather: city briefing, council slots, civic action resolution, mission framing, expedition play, resource upkeep, and return consequences.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Running the Campaign</div>
+            <h3 class="bw-card__title"><a href="../running-the-campaign/running-alternate-game-systems.html">Alternate Game Systems</a></h3>
+            <p>Explains how to adapt Bellweather / The Violet Edge to other rules systems, including a fantasy-medieval 5e reskin, while preserving the campaign’s core themes of civic survival, interpretive horror, and teaching the Violet what care means.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Civic Survival</div>
+            <h3 class="bw-card__title"><a href="../civic-survival/civic-actions.html">Civic Actions</a></h3>
+            <p>Defines the major civic action categories Bellweather can pursue, explains how town-scale action differs from character-scale action, and gives examples of actions, declarations, risks, and outcomes.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Civic Survival</div>
+            <h3 class="bw-card__title"><a href="../civic-survival/civic-trackers.html">Trackers</a></h3>
+            <p>Defines the core town trackers used to measure Bellweather's survival, stability, foothold, understanding, contact, adaptation, return progress, Dream Pressure, public interpretation, and what the Violet is learning.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Civic Survival</div>
+            <h3 class="bw-card__title"><a href="../civic-survival/civic-resources.html">Resources</a></h3>
+            <p>Explains how Bellweather tracks and spends critical resources through clocks, surplus, shortage, upkeep, civic actions, and Violet misinterpretation risk.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Civic Survival</div>
+            <h3 class="bw-card__title"><a href="../civic-survival/civic-retainers.html">Retainers</a></h3>
+            <p>Explains how to use lightweight retainers, crews, deputies, clerks, workers, and specialists as civic extensions of Bellweather during dangerous missions and town-scale actions.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Bellweather</div>
+            <h3 class="bw-card__title"><a href="../bellweather/bellweather-crisis-state.html">Crisis State</a></h3>
+            <p>Describes Bellweather immediately after the roads stop leading out: public panic, emergency governance, missing farms, failing resources, unstable meanings, and the civic pressures that push the town into campaign play.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Bellweather</div>
+            <h3 class="bw-card__title"><a href="../bellweather/bellweather-resources-supply.html">Resources and Supply</a></h3>
+            <p>Establishes what Bellweather can produce locally, what it depends on importing, why the town is not self-sufficient, and how resource scarcity becomes a civic and Violet-facing pressure.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Faith, Dreams &amp; Meaning</div>
+            <h3 class="bw-card__title"><a href="../faith-dreams-public-meaning/faith-public-interpretation-matrix.html">Public Interpretation Matrix</a></h3>
+            <p>Provides the master matrix for tracking what Bellweather believes about the Violet, how the Violet has learned to respond, and what blended personality states emerge from public meaning.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">The Violet</div>
+            <h3 class="bw-card__title"><a href="../the-violet/violet-specificity-intent.html">Specificity and Intent</a></h3>
+            <p>Teaches how careful language, clarified intent, recognition tests, and safer requests reduce dangerous Violet misinterpretation.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">The Violet</div>
+            <h3 class="bw-card__title"><a href="../the-violet/violet-travel-doctrine.html">Travel Doctrine</a></h3>
+            <p>Explains route declarations, witnesses, signal drift, group travel failure modes, and corrective actions for expeditions into the Violet.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Factions</div>
+            <h3 class="bw-card__title"><a href="../factions/faction-emergency-civic-committee.html">Emergency Civic Committee</a></h3>
+            <p>Cross-referenced municipal record.</p>
+          </article>
+        
+      </div>
+    </section>
+  
+
+          <footer class="bw-record-footer">
+            <div class="bw-record-footer__links">
+              <a href="../running-the-campaign/running-coc-integration.html">← Call of Cthulhu Integration</a>
+              <a href="../running-the-campaign/running-expedition-mode.html">Expedition Mode →</a>
+            </div>
+            <div class="bw-record-footer__stamp">
+              Bellweather municipal reference · draft · running_city_mode
+            </div>
+          </footer>
+        </article>
+      </main>
+    </div>
+  </div>
+  <script src="../assets/js/search.js" defer></script>
+</body>
+</html>

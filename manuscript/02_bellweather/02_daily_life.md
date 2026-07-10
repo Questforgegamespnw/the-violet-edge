@@ -138,11 +138,25 @@ A rumor can become:
 
 The Gazette, churches, school staff, Town Hall, and market queues all shape what the town believes is happening.
 
-## Faith, Funerals, and Grief
+## Faith and Public Meaning
 
-In Bellweather, faith institutions are part of daily civic life before they are part of cosmic horror. They feed people, bury the dead, comfort children, argue with officials, organize volunteers, preserve memory, and give frightened people words for the impossible.
+Bellweather may include real-world faith communities, fictionalized faith traditions, or a mostly secular civic culture, depending on the table.
 
-Those words matter later.
+Faith can be a major civic force in the town’s response to the Violet: people pray, gather, grieve, preach, hold funerals, argue over meaning, provide charity, and search for a moral language to explain what has happened.
+
+The important setting function is not that Bellweather must contain specific real-world religions. The important function is that communities use shared belief, ritual, and public language to interpret crisis.
+
+Before using real-world religion as a major part of the campaign, review `01_introduction/04_content_and_safety_notes.md`.
+
+Possible faith and public-meaning institutions include:
+
+- **Saint Orra’s Church** — an older church tied to civic memory, funerals, bells, charity work, and public mourning.
+- **First Bellweather Revival Hall** — a more emotionally intense revival congregation; useful, dangerous, or divisive depending on sermon language.
+- **Bellweather Synagogue / Hebrew Benevolent Society** — a small congregation or mutual-aid society centered on memory, study, exile, argument, preservation, and care.
+- **Small Muslim Prayer Circle / Workers’ Prayer Room** — a small community connected to rail, trade, immigrant labor, students, traveling merchants, or industrial work.
+- **Household and Folk Practice** — informal traditions around salt, lamps, thresholds, river rites, family prayers, and old local customs.
+- **Secular Civic Institutions** — newspapers, schools, unions, clubs, town hall, radio, family networks, and public rituals may carry the same public-meaning function if the table avoids organized religion.
+
 
 ## Children and School
 
@@ -211,61 +225,6 @@ Try:
 
 The ordinary detail gives the uncanny something to violate.
 
-## Optional Faith Institutions and Real-World Religion
-
-Bellweather can include real-world religious institutions if the table is comfortable with them. Faith can be a major civic force in the town’s response to the Violet: people pray, gather, grieve, preach, hold funerals, argue over meaning, and search for a moral language to explain what has happened.
-
-However, real-world religion should be handled with care.
-
-Some groups may want religion to be central. Others may prefer to soften it, fictionalize it, or remove explicit real-world faith traditions entirely. The campaign works either way.
-
-The important setting function is not that Bellweather must contain specific real-world religions. The important function is that communities use shared belief, ritual, and public language to interpret crisis.
-
-If using real-world faiths, portray them as human institutions first: places of comfort, disagreement, service, authority, fear, charity, grief, courage, and pressure. Avoid treating any living religion as a monster factory, secret answer key, or exotic occult device.
-
-### Table Safety Note
-
-**No player should be expected to roleplay disrespect toward their own faith, trauma around religion, forced worship, religious persecution, or theological debate unless the group has explicitly agreed that this material is welcome.**
-
-The GM should ask before making real-world religion central to a horror scenario.
-
-When in doubt, fictionalize.
-
-### Possible Faith Institutions
-
-- **Saint Orra’s Church** — an older church tied to Bellweather’s civic memory, funerals, bells, charity work, and public mourning.
-- **First Bellweather Revival Hall** — a more emotionally intense Protestant revival congregation; potentially useful, dangerous, or divisive depending on sermon language.
-- **Bellweather Synagogue / Hebrew Benevolent Society** — a small Jewish congregation or mutual-aid society centered on memory, study, exile, argument, preservation, and care.
-- **Small Muslim Prayer Circle / Workers’ Prayer Room** — a small community connected to rail, trade, immigrant labor, students, traveling merchants, or industrial work.
-- **Household and Folk Practice** — informal traditions around salt, lamps, thresholds, river rites, family prayers, and old local customs.
-
-## Faith Content Dials
-
-Before play, choose one of the following approaches.
-
-### Full Real-World Faiths
-
-Bellweather includes recognizable churches, synagogues, prayer circles, clergy, rites, scripture, public sermons, funerals, theological disagreement, and religious civic politics.
-
-Use this if the table wants religion to be a major part of the town’s response.
-
-### Soft Real-World Faiths
-
-Bellweather includes recognizable faith communities, but doctrine is kept light. Focus on care, mourning, public leadership, charity, and disagreement rather than detailed theology.
-
-Use this if the table is comfortable with faith as civic texture but does not want heavy religious debate.
-
-### Fictionalized Faiths
-
-Replace real-world institutions with fictional civic faiths, saints, local rites, old compact traditions, or broad “chapels” and “meeting houses.”
-
-Use this if the table wants the function of religion without directly using living traditions.
-
-### Secular Public Meaning
-
-Remove organized religion as a major force. Public meaning comes instead from newspapers, schools, unions, town hall, family networks, radio, clubs, and civic rituals.
-
-Use this if the table wants to avoid religious content.
 
 ## What Can Go Wrong
 

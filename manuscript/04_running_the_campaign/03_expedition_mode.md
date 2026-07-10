@@ -63,58 +63,6 @@ City Mode decides who is sent, what authority they carry, what resources they re
 
 Expedition Mode tests what that decision costs.
 
-## Retainers Should Be Simple
-
-Away-mission retainers do not need full complexity unless they become recurring favorites.
-
-A useful retainer can be defined with:
-
-- name
-- role
-- who they answer to
-- three useful skills
-- one weakness
-- one personal tie
-- one fear
-- one item or kit
-- current loyalty
-- what losing them would cost the town
-
-Example:
-
-### Ruth Bell, Eastgate Lantern-Bearer
-
-**Answers To:** Deputy Captain Mara Venn  
-**Useful Skills:** Spot Hidden, Listen, Navigate  
-**Weakness:** Panics when separated from light  
-**Personal Tie:** Younger brother missing near Orchard Road  
-**Fear:** Hearing her brother answer from the wrong direction  
-**Kit:** Numbered lantern, route tags, whistle, revolver with three rounds  
-**Loyalty:** Eastgate crew first, Town Hall second  
-**Loss Cost:** Eastgate patrol morale drops; future route declarations suffer
-
-## Command Has Consequences
-
-If a retainer dies, vanishes, returns changed, or causes harm, the consequences should reach the main character who sent them.
-
-Ask:
-
-- Who gave the order?
-- Was the mission necessary?
-- Were the risks understood?
-- Were the retainers properly equipped?
-- What did the town gain?
-- What did the town lose?
-- Who now blames the decision-maker?
-- What public meaning does the loss create?
-- What did the Violet learn from the mission?
-
-This keeps away missions from becoming disposable.
-
-A retainer is not a spare life.
-
-A retainer is someone Bellweather trusted.
-
 ## What Makes an Expedition Different
 
 Inside the town center, Bellweather is reinforced by names, lamps, routines, public records, and witnesses.

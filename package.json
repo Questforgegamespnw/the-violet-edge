@@ -1,0 +1,18 @@
+{
+  "name": "bellweather-records-wiki",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Static wiki builder for Bellweather / The Violet Edge.",
+  "scripts": {
+    "build": "node scripts/buildWiki.js",
+    "build:wiki": "node scripts/buildWiki.js --mode=full",
+    "build:player": "node scripts/buildWiki.js --mode=player",
+    "clean": "node scripts/cleanOutput.js",
+    "validate": "node scripts/validateContent.js",
+    "serve": "node scripts/serveWiki.js",
+    "build:all": "npm.cmd run build:wiki && npm.cmd run build:player"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

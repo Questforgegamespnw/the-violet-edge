@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explains route declarations, witnesses, signal drift, group travel failure modes, and corrective actions for expeditions into the Violet.">
+  <title>Travel Doctrine | Bellweather Records</title>
+  <link rel="stylesheet" href="../assets/css/bellweather.css">
+</head>
+<body class="bw-page bw-page--violet">
+  <div class="bw-site">
+    <header class="bw-masthead">
+      <div>
+        <div class="bw-masthead__eyebrow">Municipal Reference Copy</div>
+        <div class="bw-masthead__title">Bellweather</div>
+        <div class="bw-masthead__subtitle">Records &amp; Emergency Reference</div>
+      </div>
+      <div class="bw-masthead__motto">Hold Fast. Ring True.</div>
+    </header>
+
+    <div class="bw-layout">
+      <aside class="bw-sidebar">
+        <form class="bw-search" action="../search.html">
+          <label for="record-search">Search Records</label>
+          <input id="record-search" name="q" type="search" placeholder="Name, place, incident…">
+        </form>
+        <nav class="bw-nav" aria-label="Bellweather records">
+          
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Introduction</div>
+      
+        <a href="../introduction/intro-premise.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Premise</span>
+        </a>
+      
+        <a href="../introduction/intro-how-to-use.html" >
+          <span class="bw-nav__number">02</span>
+          <span>How to Use This Book</span>
+        </a>
+      
+        <a href="../introduction/intro-campaign-thesis.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Campaign Thesis</span>
+        </a>
+      
+        <a href="../introduction/intro-content-safety.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Content and Safety Notes</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Bellweather</div>
+      
+        <a href="../bellweather/bellweather-town-overview.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Town Overview</span>
+        </a>
+      
+        <a href="../bellweather/bellweather-daily-life.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Daily Life</span>
+        </a>
+      
+        <a href="../bellweather/bellweather-crisis-state.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Crisis State</span>
+        </a>
+      
+        <a href="../bellweather/bellweather-resources-supply.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Resources and Supply</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">The Violet</div>
+      
+        <a href="../the-violet/violet-identity-anchors.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Identity Anchors</span>
+        </a>
+      
+        <a href="../the-violet/violet-specificity-intent.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Specificity and Intent</span>
+        </a>
+      
+        <a href="../the-violet/violet-travel-doctrine.html" aria-current="page">
+          <span class="bw-nav__number">03</span>
+          <span>Travel Doctrine</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Running the Campaign</div>
+      
+        <a href="../running-the-campaign/running-session-loop.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Session Loop</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Civic Survival</div>
+      
+        <a href="../civic-survival/civic-actions.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Civic Actions</span>
+        </a>
+      
+        <a href="../civic-survival/civic-resources.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Resources</span>
+        </a>
+      
+        <a href="../civic-survival/civic-retainers.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Retainers</span>
+        </a>
+      
+        <a href="../civic-survival/civic-records-and-memory.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Records and Civic Memory</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Faith, Dreams &amp; Meaning</div>
+      
+        <a href="../faith-dreams-public-meaning/faith-religion-violet.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Religion and the Violet</span>
+        </a>
+      
+        <a href="../faith-dreams-public-meaning/faith-service-bans.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Service Bans</span>
+        </a>
+      
+        <a href="../faith-dreams-public-meaning/faith-children-violet.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Children and the Violet</span>
+        </a>
+      
+        <a href="../faith-dreams-public-meaning/faith-dream-pressure.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Dream Pressure</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Factions</div>
+      
+        <a href="../factions/faction-lampworkers-union.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Lampworkers’ Union</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Locations</div>
+      
+        <a href="../locations/loc-crow-mill.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Crow Mill / Bellweather Milling Company</span>
+        </a>
+      
+        <a href="../locations/loc-salt-mine.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Decommissioned Salt Mine</span>
+        </a>
+      
+        <a href="../locations/loc-eastgate-old-road.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Eastgate / The Old Road</span>
+        </a>
+      
+        <a href="../locations/loc-gazette-office.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Gazette Office / Radio Room</span>
+        </a>
+      
+        <a href="../locations/loc-harrows-grocery.html" >
+          <span class="bw-nav__number">05</span>
+          <span>Harrow’s Grocery</span>
+        </a>
+      
+        <a href="../locations/loc-mercy-hospital.html" >
+          <span class="bw-nav__number">06</span>
+          <span>Mercy Hospital / Saint Agnes Ward</span>
+        </a>
+      
+        <a href="../locations/loc-old-watchtower.html" >
+          <span class="bw-nav__number">07</span>
+          <span>Old Watchtower</span>
+        </a>
+      
+        <a href="../locations/loc-schoolhouse-library.html" >
+          <span class="bw-nav__number">08</span>
+          <span>Schoolhouse / Public Library</span>
+        </a>
+      
+        <a href="../locations/loc-old-levy.html" >
+          <span class="bw-nav__number">09</span>
+          <span>The Old Levy</span>
+        </a>
+      
+        <a href="../locations/loc-old-wall.html" >
+          <span class="bw-nav__number">10</span>
+          <span>The Old Wall</span>
+        </a>
+      
+        <a href="../locations/loc-town-hall-square.html" >
+          <span class="bw-nav__number">11</span>
+          <span>Town Hall Square</span>
+        </a>
+      
+        <a href="../locations/loc-voss-butcher.html" >
+          <span class="bw-nav__number">12</span>
+          <span>Voss Butcher &amp; Cold Room</span>
+        </a>
+      
+        <a href="../locations/loc-wrenfold-pastures.html" >
+          <span class="bw-nav__number">13</span>
+          <span>Wrenfold Pastures</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Opening the Campaign</div>
+      
+        <a href="../starting-the-campaign/start-character-ties.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Character Ties</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Field References</div>
+      
+        <a href="../appendix/handout-child-safety.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Child Safety Card</span>
+        </a>
+      
+        <a href="../appendix/handout-dream-ledger.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Dream Ledger Entry</span>
+        </a>
+      
+        <a href="../appendix/handout-route-declaration.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Route Declaration</span>
+        </a>
+      
+        <a href="../appendix/quick-session-loop.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Session Loop Quick Reference</span>
+        </a>
+      
+        <a href="../appendix/handout-sleep-intent.html" >
+          <span class="bw-nav__number">05</span>
+          <span>Sleep Intent Card</span>
+        </a>
+      
+    </div>
+  
+        </nav>
+      </aside>
+
+      <main class="bw-main">
+        <article class="bw-content">
+          <div class="bw-breadcrumbs">
+            <a href="../index.html">Archive Index</a>
+            / The Violet
+            / Travel Doctrine
+          </div>
+
+          <header class="bw-record-header">
+            <div class="bw-record-code">Record violet_travel_doctrine</div>
+            <h1 class="bw-record-title">Travel Doctrine</h1>
+            <p class="bw-record-deck">Explains route declarations, witnesses, signal drift, group travel failure modes, and corrective actions for expeditions into the Violet.</p>
+            
+    <div class="bw-record-meta">
+      <span class="bw-badge bw-badge--public">Public Distribution</span>
+      <span class="bw-badge">draft</span>
+      <span class="bw-badge">Spoilers: none</span>
+      <span class="bw-badge">Table Use: high</span>
+    </div>
+  
+          </header>
+
+          
+    <aside class="bw-glance">
+      <dl class="bw-glance__grid">
+        
+          <div><dt>Purpose</dt><dd>Explains route declarations, witnesses, signal drift, group travel failure modes, and corrective actions for expeditions into the Violet.</dd></div>
+        
+          <div><dt>Record Type</dt><dd>doctrine</dd></div>
+        
+          <div><dt>Section</dt><dd>The Violet</dd></div>
+        
+          <div><dt>Status</dt><dd>draft</dd></div>
+        
+          <div><dt>Table Use</dt><dd>high</dd></div>
+        
+      </dl>
+    </aside>
+  
+          <h2 id="travel-doctrine">Travel Doctrine</h2>
+<h3 id="travel-in-the-violet">Travel in the Violet</h3>
+<p>Travel in the Violet must be declared, witnessed, lit, named, and returned from.</p>
+<p>A named destination is a signal filter, not just navigation.</p>
+<p>The Violet does not follow feet.</p>
+<p>It follows intent.</p>
+<p>Feet just make intent visible.</p>
+<hr>
+<h3 id="stable-declarations">Stable Declarations</h3>
+<p>A stable declaration clarifies who is traveling, where they are going, and where they intend to return.</p>
+<p>Example:</p>
+<blockquote><p>“I am Mara Venn. I am going to Crow Mill. I am returning to Eastgate.”</p></blockquote>
+<p>The destination gives the Violet a clean interpretive line.</p>
+<p>A vague intention gives the Violet room to answer side thoughts, fears, grief, and remembered roads.</p>
+<hr>
+<h3 id="wandering-signals">Wandering Signals</h3>
+<p>A wandering mind broadcasts:</p>
+<ul><li>fear</li><li>grief</li><li>hope</li><li>fantasy</li><li>shame</li><li>rescue desire</li><li>home longing</li><li>dread</li><li>distraction</li><li>curiosity</li><li>private wishes</li></ul>
+<p>The Violet may answer whichever thread becomes strongest.</p>
+<p>This is why travel protocols focus on positive anchoring, not panic avoidance.</p>
+<p>Do not tell travelers:</p>
+<blockquote><p>“Do not think of wolves.”</p></blockquote>
+<p>That makes wolves relevant.</p>
+<p>Tell them:</p>
+<blockquote><p>“Hold your destination. Name your companions. Count the lanterns. Walk the marked road. Speak the return phrase.”</p></blockquote>
+<hr>
+<h3 id="why-witnesses-matter">Why Witnesses Matter</h3>
+<p>A witness is not only someone who sees the travelers leave.</p>
+<p>A witness helps define the journey.</p>
+<p>In the Violet, a route becomes more stable when multiple people agree on who is traveling, where they are going, why they are going, and where they are expected to return. The travelers carry the route physically, but the witnesses help hold it socially.</p>
+<p>Bellweather eventually learns that a declared route is strongest when it exists in several places at once:</p>
+<ul><li>in the traveler’s spoken intent</li><li>in the gate clerk’s ledger</li><li>on the route declaration form</li><li>in the memory of named witnesses</li><li>on the departure board</li><li>in the lantern number assigned to the party</li><li>in the return phrase known at the gate</li><li>in the focused expectation of the people waiting for them</li></ul>
+<p>The city is not passive during travel.</p>
+<p>The city helps remember the road.</p>
+<hr>
+<h3 id="lone-travel-vs-group-travel">Lone Travel vs. Group Travel</h3>
+<p>Lone travelers are clean signals, but fragile.</p>
+<p>Their intent may be easier for the Violet to read, but there are no companions to correct drift, interrupt panic, or witness continuity.</p>
+<p>Groups are safer but noisier.</p>
+<p>A group can stabilize each other, but conflicting desires may pull the route apart.</p>
+<p>The ideal expedition has a shared declaration and a designated caller who can repeat the purpose when the group begins to drift.</p>
+<hr>
+<h3 id="group-travel-failure-modes">Group Travel Failure Modes</h3>
+<h4 id="signal-drift">Signal Drift</h4>
+<p>Group thoughts diverge. The road incorporates side desires.</p>
+<h4 id="signal-dominance">Signal Dominance</h4>
+<p>One person’s intense need overpowers the group declaration.</p>
+<h4 id="signal-conflict">Signal Conflict</h4>
+<p>Two strong goals split the route.</p>
+<h4 id="signal-echo">Signal Echo</h4>
+<p>Repeated fears become environmental.</p>
+<h4 id="signal-capture">Signal Capture</h4>
+<p>A mist entity repeats the declaration back, attempting to take possession of the route.</p>
+<hr>
+<h3 id="route-drift-signs">Route Drift Signs</h3>
+<p>Use these signs when an expedition is beginning to lose coherence:</p>
+<ul><li>road signs become emotionally relevant instead of geographically relevant</li><li>milestones repeat</li><li>a side road appears toward a remembered place</li><li>companions hear different sounds from the same direction</li><li>lantern light bends toward someone’s private fear</li><li>maps show personal memories instead of terrain</li><li>the return phrase becomes hard to remember</li><li>one traveler’s name appears more often than the destination</li><li>a voice repeats the party’s declaration back with slight changes</li></ul>
+<hr>
+<h3 id="corrective-actions">Corrective Actions</h3>
+<p>Travelers may stabilize a route by:</p>
+<ul><li>repeating the destination</li><li>naming each companion</li><li>touching an anchor object</li><li>lowering weapons if fear is dominating</li><li>refusing side roads</li><li>closing speculation aloud</li><li>using the return phrase</li><li>asking one traveler to step back from route-calling</li><li>recording the route in writing</li><li>lighting or relighting the expedition lantern</li><li>returning to the last stable marker</li></ul>
+<hr>
+<h3 id="failed-witnessing">Failed Witnessing</h3>
+<p>Witness systems can fail.</p>
+<p>Common failures include:</p>
+<h4 id="conflicting-witnesses">Conflicting Witnesses</h4>
+<p>Witnesses privately hold different desired outcomes, and the route begins to split.</p>
+<h4 id="exhausted-witnesses">Exhausted Witnesses</h4>
+<p>A witness falls asleep, panics, prays vaguely, or loses focus.</p>
+<h4 id="corrupted-record">Corrupted Record</h4>
+<p>A route form changes, smears, gains names, loses a destination, or lists an impossible return gate.</p>
+<h4 id="unwitnessed-departure">Unwitnessed Departure</h4>
+<p>A party leaves without being named, recorded, or expected. The Violet has fewer constraints.</p>
+<h4 id="overloaded-declaration">Overloaded Declaration</h4>
+<p>Too many limits, fears, private hopes, or desperate prohibitions are crammed into the route declaration, creating interpretive noise.</p>
+<h4 id="false-closure">False Closure</h4>
+<p>The route is marked closed before the travelers truly return, making it harder for them to find the gate.</p>
+<hr>
+<h3 id="travel-maxims">Travel Maxims</h3>
+<blockquote><p>Name in mouth. Lamp in hand. Road ahead. Gate behind. Go together. Come home named.</p></blockquote>
+<blockquote><p>Name the road, hold the road. Name the gate, come home.</p></blockquote>
+<blockquote><p>One road. One purpose. One return.</p></blockquote>
+<blockquote><p>The Violet does not follow feet. It follows intent. Feet just make intent visible.</p></blockquote>
+<hr>
+<h3 id="expedition-doctrine">Expedition Doctrine</h3>
+<p>A proper expedition should define:</p>
+<ul><li>traveler names</li><li>destination</li><li>purpose</li><li>companions</li><li>route authority</li><li>lantern number</li><li>physical anchors</li><li>expected return point</li><li>return phrase</li><li>what will not be followed</li><li>what counts as mission completion</li></ul>
+<p>The safest expedition is not fearless.</p>
+<p>It is coherent.</p>
+<hr>
+<h3 id="cross-reference">Cross-Reference</h3>
+<p>For rescue-specific phrasing and recognition tests, see <code>04_specificity_and_intent.md</code>.</p>
+<p>For the Eastgate location and departure procedures, see <code>08_locations/boundary_sites/eastgate_old_road.md</code>.</p>
+<p>For printable route forms, see <code>13_appendix/handouts/route_declaration.md</code>.</p>
+          
+    <section>
+      <h2>Related Records</h2>
+      <div class="bw-card-grid">
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">The Violet</div>
+            <h3 class="bw-card__title"><a href="../the-violet/violet-identity-anchors.html">Identity Anchors</a></h3>
+            <p>Explains how names, records, maps, witnesses, signs, and rituals clarify reality and prevent places or people from becoming ambiguous.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">The Violet</div>
+            <h3 class="bw-card__title"><a href="../the-violet/violet-specificity-intent.html">Specificity and Intent</a></h3>
+            <p>Teaches how careful language, clarified intent, recognition tests, and safer requests reduce dangerous Violet misinterpretation.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Locations</div>
+            <h3 class="bw-card__title"><a href="../locations/loc-eastgate-old-road.html">Eastgate / The Old Road</a></h3>
+            <p>Cross-referenced municipal record.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Field References</div>
+            <h3 class="bw-card__title"><a href="../appendix/handout-route-declaration.html">Route Declaration</a></h3>
+            <p>Cross-referenced municipal record.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Field References</div>
+            <h3 class="bw-card__title"><a href="../appendix/handout-child-safety.html">Child Safety Card</a></h3>
+            <p>Cross-referenced municipal record.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Civic Survival</div>
+            <h3 class="bw-card__title"><a href="../civic-survival/civic-records-and-memory.html">Records and Civic Memory</a></h3>
+            <p>Explains why Bellweather's records, clerks, ledgers, rosters, maps, archives, and witnesses function as continuity infrastructure inside the Violet.</p>
+          </article>
+        
+      </div>
+    </section>
+  
+
+          <footer class="bw-record-footer">
+            <div class="bw-record-footer__links">
+              <a href="../the-violet/violet-specificity-intent.html">← Specificity and Intent</a>
+              <a href="../running-the-campaign/running-session-loop.html">Session Loop →</a>
+            </div>
+            <div class="bw-record-footer__stamp">
+              Bellweather municipal reference · draft · violet_travel_doctrine
+            </div>
+          </footer>
+        </article>
+      </main>
+    </div>
+  </div>
+  <script src="../assets/js/search.js" defer></script>
+</body>
+</html>

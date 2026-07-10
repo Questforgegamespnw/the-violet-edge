@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explains why Call of Cthulhu-style play is the default engine for Bellweather, how to frame investigators, and how to layer Continuity Stress and civic consequences onto normal investigative horror play.">
+  <title>Call of Cthulhu Integration | Bellweather Records</title>
+  <link rel="stylesheet" href="../assets/css/bellweather.css">
+</head>
+<body class="bw-page bw-page--civic">
+  <div class="bw-site">
+    <header class="bw-masthead">
+      <div>
+        <div class="bw-masthead__eyebrow">Municipal Reference Copy</div>
+        <div class="bw-masthead__title">Bellweather</div>
+        <div class="bw-masthead__subtitle">Records &amp; Emergency Reference</div>
+      </div>
+      <div class="bw-masthead__motto">Hold Fast. Ring True.</div>
+    </header>
+
+    <div class="bw-layout">
+      <aside class="bw-sidebar">
+        <form class="bw-search" action="../search.html">
+          <label for="record-search">Search Records</label>
+          <input id="record-search" name="q" type="search" placeholder="Name, place, incident…">
+        </form>
+        <nav class="bw-nav" aria-label="Bellweather records">
+          
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Introduction</div>
+      
+        <a href="../introduction/intro-premise.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Premise</span>
+        </a>
+      
+        <a href="../introduction/intro-how-to-use.html" >
+          <span class="bw-nav__number">02</span>
+          <span>How to Use This Book</span>
+        </a>
+      
+        <a href="../introduction/intro-campaign-thesis.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Campaign Thesis</span>
+        </a>
+      
+        <a href="../introduction/intro-content-safety.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Content and Safety Notes</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Bellweather</div>
+      
+        <a href="../bellweather/bellweather-town-overview.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Town Overview</span>
+        </a>
+      
+        <a href="../bellweather/bellweather-daily-life.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Daily Life</span>
+        </a>
+      
+        <a href="../bellweather/bellweather-crisis-state.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Crisis State</span>
+        </a>
+      
+        <a href="../bellweather/bellweather-resources-supply.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Resources and Supply</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">The Violet</div>
+      
+        <a href="../the-violet/violet-core-metaphysics.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Core Metaphysics</span>
+        </a>
+      
+        <a href="../the-violet/violet-caretaker-model.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Caretaker Model</span>
+        </a>
+      
+        <a href="../the-violet/violet-identity-anchors.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Identity Anchors</span>
+        </a>
+      
+        <a href="../the-violet/violet-specificity-intent.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Specificity and Intent</span>
+        </a>
+      
+        <a href="../the-violet/violet-travel-doctrine.html" >
+          <span class="bw-nav__number">05</span>
+          <span>Travel Doctrine</span>
+        </a>
+      
+        <a href="../the-violet/violet-dreams.html" >
+          <span class="bw-nav__number">06</span>
+          <span>Dreams</span>
+        </a>
+      
+        <a href="../the-violet/violet-home-return.html" >
+          <span class="bw-nav__number">07</span>
+          <span>Home and Return</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Running the Campaign</div>
+      
+        <a href="../running-the-campaign/running-coc-integration.html" aria-current="page">
+          <span class="bw-nav__number">01</span>
+          <span>Call of Cthulhu Integration</span>
+        </a>
+      
+        <a href="../running-the-campaign/running-city-mode.html" >
+          <span class="bw-nav__number">02</span>
+          <span>City Mode</span>
+        </a>
+      
+        <a href="../running-the-campaign/running-expedition-mode.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Expedition Mode</span>
+        </a>
+      
+        <a href="../running-the-campaign/running-session-loop.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Session Loop</span>
+        </a>
+      
+        <a href="../running-the-campaign/running-alternate-game-systems.html" >
+          <span class="bw-nav__number">05</span>
+          <span>Alternate Game Systems</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Civic Survival</div>
+      
+        <a href="../civic-survival/civic-actions.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Civic Actions</span>
+        </a>
+      
+        <a href="../civic-survival/civic-trackers.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Trackers</span>
+        </a>
+      
+        <a href="../civic-survival/civic-resources.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Resources</span>
+        </a>
+      
+        <a href="../civic-survival/civic-retainers.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Retainers</span>
+        </a>
+      
+        <a href="../civic-survival/civic-records-and-memory.html" >
+          <span class="bw-nav__number">05</span>
+          <span>Records and Civic Memory</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Faith, Dreams &amp; Meaning</div>
+      
+        <a href="../faith-dreams-public-meaning/faith-religion-violet.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Religion and the Violet</span>
+        </a>
+      
+        <a href="../faith-dreams-public-meaning/faith-public-interpretation-matrix.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Public Interpretation Matrix</span>
+        </a>
+      
+        <a href="../faith-dreams-public-meaning/faith-service-bans.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Service Bans</span>
+        </a>
+      
+        <a href="../faith-dreams-public-meaning/faith-children-violet.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Children and the Violet</span>
+        </a>
+      
+        <a href="../faith-dreams-public-meaning/faith-dream-pressure.html" >
+          <span class="bw-nav__number">05</span>
+          <span>Dream Pressure</span>
+        </a>
+      
+        <a href="../faith-dreams-public-meaning/faith-lucid-dreaming.html" >
+          <span class="bw-nav__number">06</span>
+          <span>Lucid Dreaming</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Npcs</div>
+      
+        <a href="../npcs/npc-dr-helena-cross.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Dr. Helena Cross</span>
+        </a>
+      
+        <a href="../npcs/npc-mayor-edith-vale.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Mayor Edith Vale</span>
+        </a>
+      
+        <a href="../npcs/npc-ruthie-marr.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Ruthie Marr</span>
+        </a>
+      
+        <a href="../npcs/npc-sister-agnes-rowe.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Sister Agnes Rowe</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Factions</div>
+      
+        <a href="../factions/faction-emergency-civic-committee.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Emergency Civic Committee</span>
+        </a>
+      
+        <a href="../factions/faction-faith-coalition.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Faith Coalition</span>
+        </a>
+      
+        <a href="../factions/faction-lampworkers-union.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Lampworkers’ Union</span>
+        </a>
+      
+        <a href="../factions/faction-society-answered.html" >
+          <span class="bw-nav__number">04</span>
+          <span>The Society of the Answered</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Locations</div>
+      
+        <a href="../locations/loc-crow-mill.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Crow Mill / Bellweather Milling Company</span>
+        </a>
+      
+        <a href="../locations/loc-salt-mine.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Decommissioned Salt Mine</span>
+        </a>
+      
+        <a href="../locations/loc-eastgate-old-road.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Eastgate / The Old Road</span>
+        </a>
+      
+        <a href="../locations/loc-gazette-office.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Gazette Office / Radio Room</span>
+        </a>
+      
+        <a href="../locations/loc-harrows-grocery.html" >
+          <span class="bw-nav__number">05</span>
+          <span>Harrow’s Grocery</span>
+        </a>
+      
+        <a href="../locations/loc-mercy-hospital.html" >
+          <span class="bw-nav__number">06</span>
+          <span>Mercy Hospital / Saint Agnes Ward</span>
+        </a>
+      
+        <a href="../locations/loc-old-watchtower.html" >
+          <span class="bw-nav__number">07</span>
+          <span>Old Watchtower</span>
+        </a>
+      
+        <a href="../locations/loc-schoolhouse-library.html" >
+          <span class="bw-nav__number">08</span>
+          <span>Schoolhouse / Public Library</span>
+        </a>
+      
+        <a href="../locations/loc-old-levy.html" >
+          <span class="bw-nav__number">09</span>
+          <span>The Old Levy</span>
+        </a>
+      
+        <a href="../locations/loc-old-wall.html" >
+          <span class="bw-nav__number">10</span>
+          <span>The Old Wall</span>
+        </a>
+      
+        <a href="../locations/loc-town-hall-square.html" >
+          <span class="bw-nav__number">11</span>
+          <span>Town Hall Square</span>
+        </a>
+      
+        <a href="../locations/loc-voss-butcher.html" >
+          <span class="bw-nav__number">12</span>
+          <span>Voss Butcher &amp; Cold Room</span>
+        </a>
+      
+        <a href="../locations/loc-wrenfold-pastures.html" >
+          <span class="bw-nav__number">13</span>
+          <span>Wrenfold Pastures</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Manifestations</div>
+      
+        <a href="../monsters-manifestations/monster-memory-predators.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Memory Predators</span>
+        </a>
+      
+        <a href="../monsters-manifestations/monster-doctrine.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Monster Doctrine</span>
+        </a>
+      
+        <a href="../monsters-manifestations/monster-role-made.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Role-Made Monsters</span>
+        </a>
+      
+        <a href="../monsters-manifestations/monster-sample-manifestations.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Sample Manifestations</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Trouble Files</div>
+      
+        <a href="../trouble-webs/trouble-service-rendered.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Service Rendered</span>
+        </a>
+      
+        <a href="../trouble-webs/trouble-child-violet-house.html" >
+          <span class="bw-nav__number">02</span>
+          <span>The Child in the Violet House</span>
+        </a>
+      
+        <a href="../trouble-webs/trouble-gentle-sleep.html" >
+          <span class="bw-nav__number">03</span>
+          <span>The Gentle Sleep</span>
+        </a>
+      
+        <a href="../trouble-webs/trouble-old-wall-holds.html" >
+          <span class="bw-nav__number">04</span>
+          <span>The Old Wall Holds</span>
+        </a>
+      
+        <a href="../trouble-webs/trouble-water-remembers.html" >
+          <span class="bw-nav__number">05</span>
+          <span>The Water Remembers</span>
+        </a>
+      
+        <a href="../trouble-webs/seed-wrong-street-sign.html" >
+          <span class="bw-nav__number">06</span>
+          <span>Wrong Street Sign</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Opening the Campaign</div>
+      
+        <a href="../starting-the-campaign/start-character-ties.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Character Ties</span>
+        </a>
+      
+        <a href="../starting-the-campaign/start-first-session.html" >
+          <span class="bw-nav__number">02</span>
+          <span>First Session</span>
+        </a>
+      
+        <a href="../starting-the-campaign/start-opening-situation.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Opening Situation</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Teaching Home</div>
+      
+        <a href="../endgame/endgame-final-anchors.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Final Anchors</span>
+        </a>
+      
+        <a href="../endgame/endgame-possible-endings.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Possible Endings</span>
+        </a>
+      
+        <a href="../endgame/endgame-teaching-home.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Teaching Home</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Field References</div>
+      
+        <a href="../appendix/handout-child-safety.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Child Safety Card</span>
+        </a>
+      
+        <a href="../appendix/handout-dream-ledger.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Dream Ledger Entry</span>
+        </a>
+      
+        <a href="../appendix/tracker-dream-pressure.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Dream Pressure Tracker</span>
+        </a>
+      
+        <a href="../appendix/tracker-signal-leak.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Personal Signal Leak Sheet</span>
+        </a>
+      
+        <a href="../appendix/tracker-public-interpretation.html" >
+          <span class="bw-nav__number">05</span>
+          <span>Public Interpretation Matrix Sheet</span>
+        </a>
+      
+        <a href="../appendix/handout-route-declaration.html" >
+          <span class="bw-nav__number">06</span>
+          <span>Route Declaration</span>
+        </a>
+      
+        <a href="../appendix/quick-session-loop.html" >
+          <span class="bw-nav__number">07</span>
+          <span>Session Loop Quick Reference</span>
+        </a>
+      
+        <a href="../appendix/handout-sleep-intent.html" >
+          <span class="bw-nav__number">08</span>
+          <span>Sleep Intent Card</span>
+        </a>
+      
+        <a href="../appendix/quick-gentle-sleep.html" >
+          <span class="bw-nav__number">09</span>
+          <span>The Gentle Sleep One-Page Reference</span>
+        </a>
+      
+        <a href="../appendix/quick-violet-response-matrix.html" >
+          <span class="bw-nav__number">10</span>
+          <span>Violet Response Matrix Quick Reference</span>
+        </a>
+      
+    </div>
+  
+        </nav>
+      </aside>
+
+      <main class="bw-main">
+        <article class="bw-content">
+          <div class="bw-breadcrumbs">
+            <a href="../index.html">Archive Index</a>
+            / Running the Campaign
+            / Call of Cthulhu Integration
+          </div>
+
+          <header class="bw-record-header">
+            <div class="bw-record-code">Record running_coc_integration</div>
+            <h1 class="bw-record-title">Call of Cthulhu Integration</h1>
+            <p class="bw-record-deck">Explains why Call of Cthulhu-style play is the default engine for Bellweather, how to frame investigators, and how to layer Continuity Stress and civic consequences onto normal investigative horror play.</p>
+            
+    <div class="bw-record-meta">
+      <span class="bw-badge bw-badge--keeper">Keeper File</span>
+      <span class="bw-badge">draft</span>
+      <span class="bw-badge">Spoilers: gm_only</span>
+      <span class="bw-badge">Table Use: high</span>
+    </div>
+  
+          </header>
+
+          
+    <aside class="bw-glance">
+      <dl class="bw-glance__grid">
+        
+          <div><dt>Purpose</dt><dd>Explains why Call of Cthulhu-style play is the default engine for Bellweather, how to frame investigators, and how to layer Continuity Stress and civic consequences onto normal investigative horror play.</dd></div>
+        
+          <div><dt>Record Type</dt><dd>gm_guidance</dd></div>
+        
+          <div><dt>Section</dt><dd>Running the Campaign</dd></div>
+        
+          <div><dt>Status</dt><dd>draft</dd></div>
+        
+          <div><dt>Table Use</dt><dd>high</dd></div>
+        
+      </dl>
+    </aside>
+  
+          <h2 id="call-of-cthulhu-integration">Call of Cthulhu Integration</h2>
+<p>The default version of <strong>Bellweather / The Violet Edge</strong> is built for a Call of Cthulhu-style investigative horror campaign with a light civic survival overlay.</p>
+<p>This works because Bellweather is not about heroes overpowering the Violet. It is about ordinary people, fragile bodies, difficult investigations, public fear, psychological stress, and the cost of understanding.</p>
+<p>The player characters are best treated as <strong>investigators in the broad sense</strong>: doctors, deputies, reporters, clergy, engineers, teachers, clerks, veterans, union workers, occult researchers, and other residents forced into public responsibility.</p>
+<p>They are not passing adventurers.</p>
+<p>They are people Bellweather depends on.</p>
+<hr>
+<h3 id="why-call-of-cthulhu-fits">Why Call of Cthulhu Fits</h3>
+<p>Call of Cthulhu-style play supports the campaign’s core needs:</p>
+<ul><li>ordinary or semi-ordinary protagonists</li><li>dangerous investigation</li><li>fragile bodies</li><li>meaningful skills</li><li>social and institutional pressure</li><li>sanity / stress consequences</li><li>uncertainty and incomplete information</li><li>clues, records, interviews, and archives</li><li>horror rooted in knowledge rather than combat victory</li></ul>
+<p>Bellweather benefits from a rules engine where <strong>a doctor, clerk, journalist, deputy, or schoolteacher can matter as much as someone with a weapon</strong>.</p>
+<hr>
+<h3 id="investigators-as-civic-actors">Investigators as Civic Actors</h3>
+<p>In a standard mystery, investigators solve a case.</p>
+<p>In Bellweather, investigators also affect the town.</p>
+<p>When investigators make discoveries, fail rolls, publish information, rescue people, lose control, or choose a civic priority, update the relevant town layer:</p>
+<ul><li>resources</li><li>public interpretation</li><li>faction position</li><li>Dream Pressure</li><li>route stability</li><li>missing person records</li><li>the Violet Response Matrix</li><li>civic trust</li><li>Signal Leaks</li></ul>
+<p>A successful scene may still create a town-scale problem.</p>
+<p>A failed scene may still reveal truth.</p>
+<p>The question is rarely only:</p>
+<blockquote><p>Did the investigators succeed?</p></blockquote>
+<p>It is also:</p>
+<blockquote><p>What did Bellweather learn?</p><p>What did the Violet learn?</p><p>What did the public now believe?</p></blockquote>
+<hr>
+<h3 id="skills-and-investigative-play">Skills and Investigative Play</h3>
+<p>Use normal investigative skills generously.</p>
+<p>Bellweather is full of practical institutions and records, so many skills can matter:</p>
+<ul><li>Accounting for ration ledgers, impossible debts, payroll, billing, and resource fraud.</li><li>Anthropology / History for old local customs, boundary rites, founder myths, and inherited civic memory.</li><li>Appraise for strange supplied goods, valuable family objects, and altered materials.</li><li>Charm / Fast Talk / Persuade / Intimidate for clerks, witnesses, faction leaders, frightened families, and public meetings.</li><li>Credit Rating for class access, old-family privilege, social credibility, and institutional gatekeeping.</li><li>First Aid / Medicine for bodily changes, sleep cases, exhausted workers, and triage.</li><li>Law for emergency ordinances, route authority, property disputes, custody, quarantine, and public assembly restrictions.</li><li>Library Use for Gazette archives, old maps, municipal records, church ledgers, school rosters, and court files.</li><li>Listen / Spot Hidden for dream traces, route drift signs, altered notices, and impossible details.</li><li>Occult / Psychology / Psychoanalysis for interpretation, stress, symbol systems, and harmful public meaning.</li><li>Mechanical Repair / Electrical Repair for Lampworks, hospital power, rail equipment, generators, and Violet-supplied infrastructure.</li><li>Natural World for livestock changes, orchard drift, river safety, weather, and nonhuman signs.</li></ul>
+<p>Do not force every clue behind one roll.</p>
+<p>The campaign works best when rolls determine <strong>cost, speed, risk, interpretation, and exposure</strong>, not whether the story can continue.</p>
+<hr>
+<h3 id="pushed-rolls-in-bellweather">Pushed Rolls in Bellweather</h3>
+<p>Pushed rolls are a natural fit for Violet pressure.</p>
+<p>When an investigator pushes, they are not merely trying harder. They are adding intensity, desperation, time, noise, emotional charge, or exposure.</p>
+<p>Good pushed-roll consequences include:</p>
+<ul><li>a Signal Leak is recorded</li><li>a route drifts</li><li>a witness becomes frightened</li><li>a public phrase gains weight</li><li>a record alters</li><li>a faction notices</li><li>a resource is damaged</li><li>a clue is gained with a harmful interpretation attached</li><li>the Violet answers the investigator’s method, not their goal</li></ul>
+<p>Example:</p>
+<p>An investigator pushes a Library Use roll in Town Hall to find an old route record. They succeed, but the route ledger adds a modern name in violet ink. The clue is real. The town now has a new problem.</p>
+<hr>
+<h3 id="luck-in-bellweather">Luck in Bellweather</h3>
+<p>Luck is useful when the question is external circumstance:</p>
+<ul><li>Is there still lamp oil in this outbuilding?</li><li>Did the clerk remember to lock the archive?</li><li>Is the old road marker still standing?</li><li>Does a patrol arrive before the crowd turns violent?</li><li>Is the radio static only static this time?</li></ul>
+<p>Group Luck can decide whether the town’s general condition favors the party in a moment.</p>
+<p>Use Luck sparingly for convenience.</p>
+<p>Use it sharply when the campaign asks:</p>
+<blockquote><p>Did ordinary reality leave them one more handhold?</p></blockquote>
+<hr>
+<h3 id="sanity-as-continuity-stress">Sanity as Continuity Stress</h3>
+<p>Bellweather can use Call of Cthulhu’s Sanity mechanics, but the framing should shift.</p>
+<p>This is not only fear of monsters or cosmic insignificance.</p>
+<p>It is <strong>Continuity Stress</strong>: the strain of realizing that thoughts, words, dreams, fears, records, and needs may be heard and answered by something that does not understand human limits.</p>
+<p>Continuity Stress comes from moments like:</p>
+<ul><li>a private thought being answered</li><li>a record changing to complete a false context</li><li>a loved one being supplied as a role rather than returned as a person</li><li>a dream becoming public infrastructure</li><li>a child being comforted but not returned</li><li>a town need becoming a dangerous civic system</li><li>an investigator realizing their fear helped shape the threat</li></ul>
+<p>The key internal question is:</p>
+<blockquote><p>What else did I teach it without meaning to?</p></blockquote>
+<hr>
+<h3 id="suggested-continuity-stress-scale">Suggested Continuity Stress Scale</h3>
+<p>Use normal Sanity loss conventions, but aim the triggers toward meaning, identity, and consent.</p>
+<p>These are starting points, not hard law.</p>
+<p>The severity should match intimacy, helplessness, and whether the investigator feels responsible.</p>
+<hr>
+<h3 id="signal-leaks">Signal Leaks</h3>
+<p>When an investigator suffers major Continuity Stress, record one or more <strong>Signal Leaks</strong>.</p>
+<p>A Signal Leak is a fear, want, memory, guilt, prayer, or need that the Violet has now “heard” clearly enough to answer later.</p>
+<p>Examples:</p>
+<ul><li>“I should have saved my brother.”</li><li>“The schoolhouse is not safe.”</li><li>“I wish my mother were here.”</li><li>“Someone has to pay for this.”</li><li>“The dead know the way.”</li><li>“I cannot wake up there again.”</li></ul>
+<p>A Signal Leak is not an immediate punishment.</p>
+<p>It is future pressure.</p>
+<p>Use it when the campaign needs a personal Violet response that feels earned instead of random.</p>
+<hr>
+<h3 id="injury-and-physical-danger">Injury and Physical Danger</h3>
+<p>Bellweather should remain physically dangerous.</p>
+<p>The Violet’s care may be metaphysical, but the world still contains:</p>
+<ul><li>falls</li><li>burns</li><li>knives</li><li>animals</li><li>fires</li><li>machinery</li><li>panic crowds</li><li>exposure</li><li>starvation</li><li>infection</li><li>gunfire</li><li>vehicle accidents</li><li>hostile manifestations</li></ul>
+<p>Injury matters because the characters are not superheroes.</p>
+<p>A wounded investigator changes what the town can risk.</p>
+<p>A dead investigator becomes part of Bellweather’s continuity problem.</p>
+<hr>
+<h3 id="magic-mythos-and-the-violet">Magic, Mythos, and the Violet</h3>
+<p>If using Call of Cthulhu’s Mythos framework, decide how much traditional Mythos exists in your version.</p>
+<p>Recommended default:</p>
+<ul><li>The Violet is not a standard Mythos entity.</li><li>Mythos knowledge may help investigators recognize alien scale, symbolic contamination, impossible geometry, or sanity risk.</li><li>Occult knowledge may help with human interpretations: rites, folk practices, sermon language, spiritualist traditions, and boundary customs.</li><li>No skill should become an automatic “understand the Violet” button.</li></ul>
+<p>The Violet is not solved by knowing its monster category.</p>
+<p>It is understood by observing how it answers.</p>
+<hr>
+<h3 id="keeper-gm-operating-principle">Keeper / GM Operating Principle</h3>
+<p>Use Call of Cthulhu mechanics to keep the characters human.</p>
+<p>Use Bellweather’s civic layer to keep the town alive.</p>
+<p>Use the Violet to make meaning dangerous.</p>
+<p>Do not let a failed roll stop the campaign. Failed investigative rolls should change cost, speed, exposure, interpretation, or who notices — not whether the players are allowed to keep playing.</p>
+<blockquote><p>A roll resolves the immediate action.</p><p>A consequence changes the town.</p><p>A repeated meaning teaches the Violet.</p></blockquote>
+          
+    <section>
+      <h2>Related Records</h2>
+      <div class="bw-card-grid">
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Introduction</div>
+            <h3 class="bw-card__title"><a href="../introduction/intro-premise.html">Premise</a></h3>
+            <p>Introduces Bellweather as a functioning 1930s town displaced into the Violet Edge, establishes the core question of community survival, and explains what kinds of characters players portray.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Introduction</div>
+            <h3 class="bw-card__title"><a href="../introduction/intro-campaign-thesis.html">Campaign Thesis</a></h3>
+            <p>States the campaign’s core thesis: Bellweather must survive long enough to teach a vast interpretive caretaker what home and care actually mean. Includes the table pitch, central play loop, and GM principles.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Running the Campaign</div>
+            <h3 class="bw-card__title"><a href="../running-the-campaign/running-city-mode.html">City Mode</a></h3>
+            <p>Explains Bellweather's town-scale play mode: civic authority, declarations, civic actions, retainers, public interpretation, and how the town makes meaningful choices between expeditions. Detailed slot economy and dice procedures live in the Session Loop.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Running the Campaign</div>
+            <h3 class="bw-card__title"><a href="../running-the-campaign/running-expedition-mode.html">Expedition Mode</a></h3>
+            <p>Explains how to run character-scale missions beyond stable Bellweather: route declarations, travel pressure, clue scenes, resource retrieval, missing persons, and return consequences.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Running the Campaign</div>
+            <h3 class="bw-card__title"><a href="../running-the-campaign/running-session-loop.html">Session Loop</a></h3>
+            <p>Provides the repeatable table procedure for Bellweather: city briefing, council slots, civic action resolution, mission framing, expedition play, resource upkeep, and return consequences.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">The Violet</div>
+            <h3 class="bw-card__title"><a href="../the-violet/violet-core-metaphysics.html">Core Metaphysics</a></h3>
+            <p>Explains what the Violet is, how it perceives meaning, why it over-answers, how it communicates through responses before speech, and why it completes contexts rather than granting wishes.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">The Violet</div>
+            <h3 class="bw-card__title"><a href="../the-violet/violet-specificity-intent.html">Specificity and Intent</a></h3>
+            <p>Teaches how careful language, clarified intent, recognition tests, and safer requests reduce dangerous Violet misinterpretation.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Civic Survival</div>
+            <h3 class="bw-card__title"><a href="../civic-survival/civic-actions.html">Civic Actions</a></h3>
+            <p>Defines the major civic action categories Bellweather can pursue, explains how town-scale action differs from character-scale action, and gives examples of actions, declarations, risks, and outcomes.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Civic Survival</div>
+            <h3 class="bw-card__title"><a href="../civic-survival/civic-trackers.html">Trackers</a></h3>
+            <p>Defines the core town trackers used to measure Bellweather's survival, stability, foothold, understanding, contact, adaptation, return progress, Dream Pressure, public interpretation, and what the Violet is learning.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Field References</div>
+            <h3 class="bw-card__title"><a href="../appendix/tracker-signal-leak.html">Personal Signal Leak Sheet</a></h3>
+            <p>Cross-referenced municipal record.</p>
+          </article>
+        
+      </div>
+    </section>
+  
+
+          <footer class="bw-record-footer">
+            <div class="bw-record-footer__links">
+              <a href="../the-violet/violet-home-return.html">← Home and Return</a>
+              <a href="../running-the-campaign/running-city-mode.html">City Mode →</a>
+            </div>
+            <div class="bw-record-footer__stamp">
+              Bellweather municipal reference · draft · running_coc_integration
+            </div>
+          </footer>
+        </article>
+      </main>
+    </div>
+  </div>
+  <script src="../assets/js/search.js" defer></script>
+</body>
+</html>
