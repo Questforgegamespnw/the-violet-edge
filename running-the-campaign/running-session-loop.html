@@ -1,0 +1,720 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Provides the repeatable table procedure for Bellweather: city briefing, council slots, civic action resolution, mission framing, expedition play, resource upkeep, and return consequences.">
+  <title>Session Loop | Bellweather Records</title>
+  <link rel="stylesheet" href="../assets/css/bellweather.css">
+</head>
+<body class="bw-page bw-page--civic">
+  <div class="bw-site">
+    <header class="bw-masthead">
+      <div>
+        <div class="bw-masthead__eyebrow">Municipal Reference Copy</div>
+        <div class="bw-masthead__title">Bellweather</div>
+        <div class="bw-masthead__subtitle">Records &amp; Emergency Reference</div>
+      </div>
+      <div class="bw-masthead__motto">Hold Fast. Ring True.</div>
+    </header>
+
+    <div class="bw-layout">
+      <aside class="bw-sidebar">
+        <form class="bw-search" action="../search.html">
+          <label for="record-search">Search Records</label>
+          <input id="record-search" name="q" type="search" placeholder="Name, place, incident…">
+        </form>
+        <nav class="bw-nav" aria-label="Bellweather records">
+          
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Introduction</div>
+      
+        <a href="../introduction/intro-premise.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Premise</span>
+        </a>
+      
+        <a href="../introduction/intro-how-to-use.html" >
+          <span class="bw-nav__number">02</span>
+          <span>How to Use This Book</span>
+        </a>
+      
+        <a href="../introduction/intro-campaign-thesis.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Campaign Thesis</span>
+        </a>
+      
+        <a href="../introduction/intro-content-safety.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Content and Safety Notes</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Bellweather</div>
+      
+        <a href="../bellweather/bellweather-town-overview.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Town Overview</span>
+        </a>
+      
+        <a href="../bellweather/bellweather-daily-life.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Daily Life</span>
+        </a>
+      
+        <a href="../bellweather/bellweather-crisis-state.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Crisis State</span>
+        </a>
+      
+        <a href="../bellweather/bellweather-resources-supply.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Resources and Supply</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">The Violet</div>
+      
+        <a href="../the-violet/violet-identity-anchors.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Identity Anchors</span>
+        </a>
+      
+        <a href="../the-violet/violet-specificity-intent.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Specificity and Intent</span>
+        </a>
+      
+        <a href="../the-violet/violet-travel-doctrine.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Travel Doctrine</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Running the Campaign</div>
+      
+        <a href="../running-the-campaign/running-session-loop.html" aria-current="page">
+          <span class="bw-nav__number">01</span>
+          <span>Session Loop</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Civic Survival</div>
+      
+        <a href="../civic-survival/civic-actions.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Civic Actions</span>
+        </a>
+      
+        <a href="../civic-survival/civic-resources.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Resources</span>
+        </a>
+      
+        <a href="../civic-survival/civic-retainers.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Retainers</span>
+        </a>
+      
+        <a href="../civic-survival/civic-records-and-memory.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Records and Civic Memory</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Faith, Dreams &amp; Meaning</div>
+      
+        <a href="../faith-dreams-public-meaning/faith-religion-violet.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Religion and the Violet</span>
+        </a>
+      
+        <a href="../faith-dreams-public-meaning/faith-service-bans.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Service Bans</span>
+        </a>
+      
+        <a href="../faith-dreams-public-meaning/faith-children-violet.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Children and the Violet</span>
+        </a>
+      
+        <a href="../faith-dreams-public-meaning/faith-dream-pressure.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Dream Pressure</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Factions</div>
+      
+        <a href="../factions/faction-lampworkers-union.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Lampworkers’ Union</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Locations</div>
+      
+        <a href="../locations/loc-crow-mill.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Crow Mill / Bellweather Milling Company</span>
+        </a>
+      
+        <a href="../locations/loc-salt-mine.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Decommissioned Salt Mine</span>
+        </a>
+      
+        <a href="../locations/loc-eastgate-old-road.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Eastgate / The Old Road</span>
+        </a>
+      
+        <a href="../locations/loc-gazette-office.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Gazette Office / Radio Room</span>
+        </a>
+      
+        <a href="../locations/loc-harrows-grocery.html" >
+          <span class="bw-nav__number">05</span>
+          <span>Harrow’s Grocery</span>
+        </a>
+      
+        <a href="../locations/loc-mercy-hospital.html" >
+          <span class="bw-nav__number">06</span>
+          <span>Mercy Hospital / Saint Agnes Ward</span>
+        </a>
+      
+        <a href="../locations/loc-old-watchtower.html" >
+          <span class="bw-nav__number">07</span>
+          <span>Old Watchtower</span>
+        </a>
+      
+        <a href="../locations/loc-schoolhouse-library.html" >
+          <span class="bw-nav__number">08</span>
+          <span>Schoolhouse / Public Library</span>
+        </a>
+      
+        <a href="../locations/loc-old-levy.html" >
+          <span class="bw-nav__number">09</span>
+          <span>The Old Levy</span>
+        </a>
+      
+        <a href="../locations/loc-old-wall.html" >
+          <span class="bw-nav__number">10</span>
+          <span>The Old Wall</span>
+        </a>
+      
+        <a href="../locations/loc-town-hall-square.html" >
+          <span class="bw-nav__number">11</span>
+          <span>Town Hall Square</span>
+        </a>
+      
+        <a href="../locations/loc-voss-butcher.html" >
+          <span class="bw-nav__number">12</span>
+          <span>Voss Butcher &amp; Cold Room</span>
+        </a>
+      
+        <a href="../locations/loc-wrenfold-pastures.html" >
+          <span class="bw-nav__number">13</span>
+          <span>Wrenfold Pastures</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Opening the Campaign</div>
+      
+        <a href="../starting-the-campaign/start-character-ties.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Character Ties</span>
+        </a>
+      
+    </div>
+  
+    <div class="bw-nav__group">
+      <div class="bw-nav__group-title">Field References</div>
+      
+        <a href="../appendix/handout-child-safety.html" >
+          <span class="bw-nav__number">01</span>
+          <span>Child Safety Card</span>
+        </a>
+      
+        <a href="../appendix/handout-dream-ledger.html" >
+          <span class="bw-nav__number">02</span>
+          <span>Dream Ledger Entry</span>
+        </a>
+      
+        <a href="../appendix/handout-route-declaration.html" >
+          <span class="bw-nav__number">03</span>
+          <span>Route Declaration</span>
+        </a>
+      
+        <a href="../appendix/quick-session-loop.html" >
+          <span class="bw-nav__number">04</span>
+          <span>Session Loop Quick Reference</span>
+        </a>
+      
+        <a href="../appendix/handout-sleep-intent.html" >
+          <span class="bw-nav__number">05</span>
+          <span>Sleep Intent Card</span>
+        </a>
+      
+    </div>
+  
+        </nav>
+      </aside>
+
+      <main class="bw-main">
+        <article class="bw-content">
+          <div class="bw-breadcrumbs">
+            <a href="../index.html">Archive Index</a>
+            / Running the Campaign
+            / Session Loop
+          </div>
+
+          <header class="bw-record-header">
+            <div class="bw-record-code">Record running_session_loop</div>
+            <h1 class="bw-record-title">Session Loop</h1>
+            <p class="bw-record-deck">Provides the repeatable table procedure for Bellweather: city briefing, council slots, civic action resolution, mission framing, expedition play, resource upkeep, and return consequences.</p>
+            
+    <div class="bw-record-meta">
+      <span class="bw-badge bw-badge--keeper">Partial Public Record</span>
+      <span class="bw-badge">draft</span>
+      <span class="bw-badge">Spoilers: light</span>
+      <span class="bw-badge">Table Use: high</span>
+    </div>
+  
+          </header>
+
+          
+    <aside class="bw-glance">
+      <dl class="bw-glance__grid">
+        
+          <div><dt>Purpose</dt><dd>Provides the repeatable table procedure for Bellweather: city briefing, council slots, civic action resolution, mission framing, expedition play, resource upkeep, and return consequences.</dd></div>
+        
+          <div><dt>Record Type</dt><dd>gm_procedure</dd></div>
+        
+          <div><dt>Section</dt><dd>Running the Campaign</dd></div>
+        
+          <div><dt>Status</dt><dd>draft</dd></div>
+        
+          <div><dt>Table Use</dt><dd>high</dd></div>
+        
+      </dl>
+    </aside>
+  
+          <h2 id="session-loop">Session Loop</h2>
+<p>Bellweather works best with a repeatable session rhythm.</p>
+<p>The players should feel that each session is not just an isolated mystery, but another day of the town trying to remain itself.</p>
+<p>Use this loop as the default structure:</p>
+<ol><li>City Briefing</li><li>Council Decision</li><li>Mission Framing</li><li>Expedition Play</li><li>Return and Consequence</li></ol>
+<p>You can compress, expand, or skip steps as needed, but this loop keeps the campaign focused on both investigation and civic survival.</p>
+<hr>
+<h3 id="how-long-is-a-loop">How Long Is a Loop?</h3>
+<p>A City Mode loop is the period between major civic decisions.</p>
+<p>It may represent:</p>
+<ul><li>one urgent day</li><li>several days of pressure</li><li>a week of rationing and repairs</li><li>the time between expeditions</li><li>one major crisis cycle</li></ul>
+<p>Do not lock the loop to a strict calendar unless the situation calls for it.</p>
+<p>Use the loop as a pacing tool.</p>
+<p>The question is not always “How many hours passed?”</p>
+<p>Instead:</p>
+<blockquote><p>What did Bellweather have time, attention, labor, and trust to do before the next pressure arrived?</p></blockquote>
+<hr>
+<h4 id="1-city-briefing">1. City Briefing</h4>
+<p>Begin with the town.</p>
+<p>Present the current situation in practical terms.</p>
+<p>Good briefing ingredients:</p>
+<ul><li>one urgent resource issue</li><li>one public rumor or interpretation problem</li><li>one faction pressure</li><li>one missing person or route concern</li><li>one strange Violet development</li><li>one possible expedition hook</li></ul>
+<p>Examples:</p>
+<ul><li>Mercy Hospital has enough oil for one more night of full lamp use.</li><li>The Gazette wants permission to print the word “miracle.”</li><li>Three families demand a rescue mission to East Orchard Road.</li><li>A ration ledger lists a household that no one remembers.</li><li>Children at the schoolhouse drew the same locked room.</li></ul>
+<p>The briefing should create choices, not just mood.</p>
+<h4 id="briefing-atmosphere-and-civic-pressure">Briefing Atmosphere and Civic Pressure</h4>
+<p>The City Briefing should not feel like a sterile report.</p>
+<p>Bellweather is a living town. Its pressure should be visible before the council ever votes.</p>
+<p>Use the town’s current stress level, ignored problems, resource strain, and public interpretation to color the opening scene.</p>
+<h4 id="calm-contained">Calm / Contained</h4>
+<p>When the town is worried but still functional, show concern without disorder.</p>
+<p>Examples:</p>
+<ul><li>a few citizens waiting quietly outside the meeting room</li><li>a mother asking whether the school will remain open</li><li>a shopkeeper requesting clarification on ration rules</li><li>a deputy whispering that people are asking about Eastgate</li><li>hospital staff delivering a written request instead of interrupting</li><li>clergy, union officers, or Gazette staff waiting to be called in</li></ul>
+<p>The feeling should be tense, but orderly.</p>
+<p>People still believe someone is in charge.</p>
+<h4 id="stressed-publicly-fraying">Stressed / Publicly Fraying</h4>
+<p>When the town is stressed, let the pressure gather around the council.</p>
+<p>Examples:</p>
+<ul><li>a crowd in the hall demanding answers</li><li>citizens barred from City Hall shouting outside</li><li>families of the missing holding names and photographs</li><li>union workers refusing night duty without oil priority</li><li>parents demanding the schoolhouse be protected</li><li>a preacher, rabbi, imam, or civic speaker warning that silence is making things worse</li><li>Gazette reporters pressing for a public statement</li><li>deputies visibly unsure whether to hold the line or let people in</li></ul>
+<p>The feeling should be political and emotional.</p>
+<p>People are no longer only asking for reassurance. They are demanding decisions.</p>
+<h4 id="critical-near-breaking">Critical / Near Breaking</h4>
+<p>When stress is critical, the council should feel surrounded by consequences.</p>
+<p>Examples:</p>
+<ul><li>City Hall doors locked against a crowd</li><li>a faction leader forcing their way into the meeting</li><li>a ration line turning violent nearby</li><li>hospital bells ringing during the briefing</li><li>a child witness brought in because adults ignored the issue too long</li><li>a returned person appearing in the hall before anyone can explain them</li><li>citizens chanting a dangerous phrase the Violet may answer</li><li>a public notice torn down and rewritten by hand</li><li>a trusted NPC accusing the council of choosing politics over people</li></ul>
+<p>The feeling should be that delay has become action.</p>
+<p>If the council will not choose, the town will.</p>
+<hr>
+<h4 id="ignored-problems-should-find-a-voice">Ignored Problems Should Find a Voice</h4>
+<p>When the players repeatedly delay or ignore a problem, do not only mark a clock.</p>
+<p>Bring the problem into the room.</p>
+<p>A neglected issue may appear as:</p>
+<ul><li>an important NPC demanding action</li><li>a grieving family asking why no one has gone after the missing</li><li>a faction using the delay to gain influence</li><li>a public rumor becoming accepted truth</li><li>an unsafe interpretation spreading through sermons, newspapers, schools, or ration lines</li><li>a resource worker refusing further service</li><li>a retainer asking whether the town intends to abandon their people</li><li>a child, patient, clerk, or witness revealing that the problem has already worsened</li></ul>
+<p>This should not be used to punish players for prioritizing.</p>
+<p>City Mode is built on impossible triage.</p>
+<p>Instead, use ignored problems to show that every delayed issue continues living somewhere in Bellweather.</p>
+<hr>
+<h4 id="quick-gm-prompt">Quick GM Prompt</h4>
+<p>At the start of each City Briefing, ask:</p>
+<ol><li>What did the council prioritize last loop?</li><li>What did they leave alone?</li><li>Who benefited from that choice?</li><li>Who suffered from that choice?</li><li>Who is now waiting outside the room?</li></ol>
+<hr>
+<h4 id="2-council-decision">2. Council Decision</h4>
+<p>The players decide what Bellweather prioritizes.</p>
+<p>This may happen through an Emergency Civic Committee, informal faction council, player-character authority, public meeting, or practical triage.</p>
+<p>Ask:</p>
+<ul><li>What problem gets attention this loop?</li><li>What problem is delayed?</li><li>Who will be angry about that?</li><li>What public explanation is given?</li><li>What does the town think this decision means?</li></ul>
+<p>The decision should create both action and consequence.</p>
+<hr>
+<h3 id="council-slots">Council Slots</h3>
+<p>Bellweather cannot do everything every loop.</p>
+<p>City Mode is not only about scarcity of food, oil, medicine, and labor.</p>
+<p>It is also about scarcity of attention.</p>
+<h4 id="default-slot-economy">Default Slot Economy</h4>
+<p>Each normal City Mode loop gives Bellweather <strong>three Council Slots</strong>.</p>
+<p>Each Council Slot can hold:</p>
+<ul><li><strong>one Major Civic Action</strong></li><li><strong>one attached Supporting Action</strong></li><li>optional character support</li><li>optional resource spending</li></ul>
+<p>A Major Civic Action is a town-scale effort that requires meaningful authority, attention, labor, supplies, or public trust.</p>
+<p>A Supporting Action is a smaller attached effort that improves, protects, clarifies, or limits the Major Action.</p>
+<p>Not every Major Action creates an expedition. Expeditions happen only when the civic action must be resolved through direct character-scale danger, investigation, travel, or contact with the Violet.</p>
+<h4 id="adjusting-slot-count">Adjusting Slot Count</h4>
+<p>Use three slots as the default.</p>
+<p>Adjust when the town’s condition changes:</p>
+<ul><li><strong>Quiet / recovery loop:</strong> 2 Council Slots</li><li><strong>Normal crisis loop:</strong> 3 Council Slots</li><li><strong>Emergency mobilization:</strong> 4 Council Slots, but mark Labor/Fatigue or Public Trust</li><li><strong>Collapse state:</strong> 1–2 Council Slots until stabilized</li></ul>
+<p>Extra slots are not free.</p>
+<p>If Bellweather over-mobilizes, someone gets exhausted, frightened, coerced, or ignored.</p>
+<h4 id="council-slot-template">Council Slot Template</h4>
+<pre><code>Major Action:
+What is Bellweather trying to accomplish?
+
+Lead Decision-Maker:
+Which main character, institution, or faction takes responsibility?
+
+Supporting Action:
+What smaller effort improves or protects the action?
+
+Personnel:
+Who is assigned?
+
+Resources Spent:
+What clock, surplus, authority, or trust is committed?
+
+Public Framing:
+What does the town believe this action means?
+
+Violet Risk:
+What might the Violet misread?
+
+Resolution:
+Automatic, City Mode roll, character scene, or expedition trigger?
+
+Result:
+What changes afterward?</code></pre>
+<hr>
+<h3 id="resolving-civic-actions">Resolving Civic Actions</h3>
+<p>Use this procedure when a Council Slot requires a City Mode roll.</p>
+<p>Use normal character rules when a specific character’s personal action is the dramatic focus.</p>
+<p>Use City Mode when Bellweather acts through institutions, crews, public systems, factions, retainers, or civic projects.</p>
+<p>City Mode uses <strong>d10 dice pools</strong>.</p>
+<p>Each die showing <strong>8, 9, or 10</strong> is a success.</p>
+<p>The size of the pool represents the town's current capacity, plus support, minus pressure.</p>
+<hr>
+<h4 id="1-declare-the-civic-action">1. Declare the Civic Action</h4>
+<p>Name the action clearly.</p>
+<p>Define:</p>
+<ul><li>objective</li><li>lead decision-maker</li><li>involved institution</li><li>committed personnel</li><li>committed resources</li><li>public framing</li><li>Violet risk</li><li>return or completion condition</li></ul>
+<p>A civic action declaration is not a magical command, but it matters because Bellweather is inside the Violet.</p>
+<p>A good declaration is specific, witnessed, limited, affirmative, grounded in records, clear about who is included, and careful about what it refuses to name.</p>
+<p>A bad declaration is vague, fear-centered, punitive, category-based, publicly amplified without safer language, or too broad for the Violet to interpret safely.</p>
+<hr>
+<h4 id="2-choose-the-civic-capacity">2. Choose the Civic Capacity</h4>
+<p>Choose the most relevant town tracker.</p>
+<p>The tracker rating becomes the base d10 pool.</p>
+<p>Suggested civic capacities:</p>
+<ul><li><strong>Survival</strong> — food, water, medicine, shelter, sanitation, emergency care</li><li><strong>Stability</strong> — law, morale, trust, public order, legitimacy</li><li><strong>Foothold</strong> — maps, lamps, gates, routes, boundaries, district integrity</li><li><strong>Understanding</strong> — research, interpretation, occult/scientific knowledge, pattern recognition</li><li><strong>Contact</strong> — expeditions, missing people, outside signals, diplomacy, scouting</li><li><strong>Adaptation</strong> — new protocols, invention, training, altered methods, resilience</li><li><strong>Return</strong> — endgame anchors, home doctrine, continuity, final civic consent</li></ul>
+<p>Use a 0–5 rating.</p>
+<pre><code>0 Broken
+1 Fragile
+2 Strained
+3 Functional
+4 Strong
+5 Exceptional / deeply anchored</code></pre>
+<p>Example:</p>
+<blockquote><p>Foothold 3 means Bellweather has a functional but stressed route, lamp, and boundary system. A civic action to stabilize Eastgate begins with 3d10.</p></blockquote>
+<hr>
+<h4 id="3-add-character-support">3. Add Character Support</h4>
+<p>Each supporting character describes a concrete contribution and rolls an appropriate character skill.</p>
+<p>Examples:</p>
+<ul><li>A doctor supports hospital triage with Medicine.</li><li>A Gazette editor supports public calm with Persuade or Psychology.</li><li>A town clerk supports an identity audit with Library Use or Accounting.</li><li>A deputy supports ration order enforcement with Intimidate, Law, or Firearms only if force is relevant.</li><li>An engineer supports lamp-grid repair with Mechanical Repair or Electrical Repair.</li><li>A clergy member supports grief discipline with Persuade, Psychology, Theology, Occult, or another table-approved faith/community skill.</li></ul>
+<p>Support roll outcomes:</p>
+<ul><li><strong>Regular success:</strong> +1 die to the City Mode pool</li><li><strong>Hard success:</strong> +2 dice</li><li><strong>Extreme success:</strong> +2 dice and reduce one consequence if the City Mode roll partially succeeds</li><li><strong>Failure:</strong> no bonus</li><li><strong>Pushed failure:</strong> no bonus and add a complication, strain, or Violet-risk tag</li><li><strong>Fumble:</strong> -1 die or automatic complication</li></ul>
+<p>Usually allow:</p>
+<ul><li>one lead character</li><li>up to two supporting characters</li></ul>
+<p>Allow more only if the action clearly has multiple workstreams.</p>
+<p>Cap the total support bonus at <strong>+3 dice</strong> unless the group is spending a major resource or making this problem the session's main civic focus.</p>
+<hr>
+<h4 id="when-everyone-helps">When Everyone Helps</h4>
+<p>If every player wants to contribute, split the civic action into workstreams.</p>
+<p>Example: <strong>Stabilize Eastgate after a failed patrol.</strong></p>
+<p>Possible workstreams:</p>
+<ul><li><strong>Route Records</strong> — clerk audits prior route declarations.</li><li><strong>Physical Barrier</strong> — engineers repair lamps, signs, and barricades.</li><li><strong>Public Calm</strong> — Gazette, clergy, or Town Hall explains the closure.</li><li><strong>Patrol Readiness</strong> — deputies organize guards and lantern-bearers.</li><li><strong>Violet Interpretation</strong> — occultist reviews what phrase, dream, or fear triggered the drift.</li></ul>
+<p>Each successful workstream may do one of the following:</p>
+<ul><li>add +1 die</li><li>remove -1 penalty</li><li>protect against one specific consequence</li><li>unlock a safer declaration</li><li>identify the likely Violet misread before the final roll</li></ul>
+<p>Then roll one final City Mode pool.</p>
+<p>Do not roll five separate full City Mode actions unless the problem is meant to consume the whole cycle.</p>
+<hr>
+<h4 id="4-commit-resources">4. Commit Resources</h4>
+<p>Spend relevant resources for extra strength.</p>
+<ul><li>Spend 1 relevant resource: +1 die or remove one penalty</li><li>Spend 2 relevant resources: +2 dice or protect against one likely consequence</li><li>Spend a Surplus: +2 dice or +1 die and prevent one related consequence</li></ul>
+<p>Mark spent resources on their clocks.</p>
+<p>Resource spending should matter in the fiction.</p>
+<p>Examples:</p>
+<ul><li>Spend Oil/Light for lit routes, hospital operations, gate watches, or night patrols.</li><li>Spend Food for morale, labor strength, refugee care, or public calm.</li><li>Spend Medicine for triage, recovery, sleep ward care, or surgery.</li><li>Spend Paper/Records for notices, route forms, ration cards, audits, or identity records.</li><li>Spend Labor for repairs, patrols, construction, searches, hauling, or barricades.</li><li>Spend Public Trust for unpopular orders, curfews, ration enforcement, assembly limits, or secrecy.</li></ul>
+<p>A resource can also allow an action at all.</p>
+<p>If the hospital has no medicine, a medicine-based civic action may be impossible without substitution, sacrifice, trade, or a dangerous Violet-facing request.</p>
+<hr>
+<h4 id="5-apply-pressure">5. Apply Pressure</h4>
+<p>Subtract dice for active problems.</p>
+<p>Common penalties:</p>
+<ul><li>shortage</li><li>public panic</li><li>faction opposition</li><li>rushed action</li><li>weak identity</li><li>vague declaration</li><li>unsafe public language</li><li>dangerous Violet interpretation</li><li>exhausted labor</li><li>missing records</li><li>unreliable witnesses</li></ul>
+<p>Usually remove dice rather than changing the target number. Keep success on 8–10 so the procedure stays fast.</p>
+<hr>
+<h4 id="6-roll-the-pool">6. Roll the Pool</h4>
+<p>Roll the final d10 pool.</p>
+<p>Each 8, 9, or 10 is a success.</p>
+<ul><li><strong>0 successes:</strong> failure with consequence</li><li><strong>1 success:</strong> partial success or success with cost</li><li><strong>2 successes:</strong> clean success</li><li><strong>3+ successes:</strong> strong success with extra benefit</li></ul>
+<h4 id="0-successes-failure-with-consequence">0 Successes — Failure With Consequence</h4>
+<p>The action does not achieve its purpose, or achieves it in the wrong way.</p>
+<p>Mark a relevant tracker down, spend the committed resource anyway, and introduce a Violet misread, faction consequence, public panic, or new trouble.</p>
+<h4 id="1-success-partial-or-costly-success">1 Success — Partial or Costly Success</h4>
+<p>The action works, but choose or assign a cost:</p>
+<ul><li>resource spent</li><li>time lost</li><li>retainer harmed</li><li>public fear rises</li><li>interpretation shifts</li><li>route becomes unstable</li><li>faction gains leverage</li><li>the Violet learns an unhelpful lesson</li></ul>
+<h4 id="2-successes-clean-success">2 Successes — Clean Success</h4>
+<p>The action achieves its purpose without major new harm.</p>
+<p>Update the relevant tracker or stabilize the pressure.</p>
+<h4 id="3-successes-strong-success">3+ Successes — Strong Success</h4>
+<p>The action succeeds and creates an additional benefit:</p>
+<ul><li>extra information</li><li>improved public trust</li><li>reduced panic</li><li>preserved resource</li><li>better route</li><li>faction support</li><li>useful doctrine</li><li>temporary Surplus</li><li>reduced Dream Pressure</li><li>a safer future declaration</li></ul>
+<hr>
+<h3 id="town-stress-and-complications">Town Stress and Complications</h3>
+<p>Town Stress does not only make failure more likely.</p>
+<p>It makes success messier.</p>
+<p>If Town Stress is low, ignore 1s unless the scene calls for danger.</p>
+<p>If Town Stress is high, each die showing <strong>1</strong> creates a complication even if the action succeeds.</p>
+<p>A complication may be:</p>
+<ul><li>rumor spread</li><li>public fear</li><li>retainer injury</li><li>faction backlash</li><li>resource waste</li><li>Violet misread</li><li>witness exhaustion</li><li>record corruption</li><li>dream echo</li><li>unsafe phrase repeated publicly</li></ul>
+<p>A stressed town can still succeed.</p>
+<p>It just pays more for success.</p>
+<hr>
+<h4 id="7-update-the-town">7. Update the Town</h4>
+<p>After the roll, update:</p>
+<ul><li>relevant civic tracker</li><li>resource clocks</li><li>public interpretation</li><li>faction position</li><li>Violet Response Matrix</li><li>rumors, notices, or future trouble</li></ul>
+<p>Ask two final questions:</p>
+<blockquote><p>What does this teach the public?</p></blockquote>
+<blockquote><p>What does this teach the Violet?</p></blockquote>
+<p>Practical success does not automatically mean metaphysical success.</p>
+<hr>
+<h3 id="resource-clocks">Resource Clocks</h3>
+<p>Use resource clocks instead of exact inventory unless the table wants detailed scarcity.</p>
+<p>Suggested resource clocks:</p>
+<ul><li><strong>Food / Grain</strong></li><li><strong>Oil / Light</strong></li><li><strong>Medicine</strong></li><li><strong>Salt / Preservation</strong></li><li><strong>Livestock</strong></li><li><strong>Paper / Records</strong></li><li><strong>Fuel / Coal</strong></li><li><strong>Labor / Fatigue</strong></li><li><strong>Public Trust</strong></li></ul>
+<p>A 6-segment clock works well.</p>
+<pre><code>0–1 Stable
+2–3 Strained
+4–5 Critical
+6 Crisis / shortage event</code></pre>
+<p>When a clock reaches 6, trigger a civic pressure.</p>
+<p>Examples:</p>
+<ul><li><strong>Food crisis:</strong> ration unrest, theft, black market, hunger dreams.</li><li><strong>Oil crisis:</strong> route failure, hospital darkness, night panic.</li><li><strong>Medicine crisis:</strong> triage deaths, sleep ward failures, desperate Violet requests.</li><li><strong>Paper crisis:</strong> records degrade, route forms are rationed, identity anchors weaken.</li><li><strong>Labor crisis:</strong> accidents, resentment, exhausted witnesses, failed patrols.</li><li><strong>Trust crisis:</strong> faction revolt, underground sermons, rumor dominance.</li></ul>
+<p>After the crisis triggers, reset the clock to 3 if partially stabilized, or keep it at 6 if unresolved.</p>
+<hr>
+<h4 id="surplus">Surplus</h4>
+<p>Surplus is a temporary advantage.</p>
+<p>If a resource is in unusually good shape, mark it as Surplus.</p>
+<p>Examples:</p>
+<ul><li>Food Surplus</li><li>Oil Surplus</li><li>Medical Surplus</li><li>Paper Surplus</li><li>Labor Surplus</li><li>Trust Surplus</li></ul>
+<p>A Surplus can be spent once for:</p>
+<ul><li>+2 dice</li><li>+1 die and prevent a related consequence</li><li>allow a major project without ticking the resource clock</li><li>cancel a related Critical penalty for one action</li></ul>
+<p>Then remove the Surplus.</p>
+<p>Surplus should feel valuable, but not permanent.</p>
+<hr>
+<h4 id="shortage">Shortage</h4>
+<p>If a resource clock is critical or maxed, it creates penalties.</p>
+<ul><li><strong>Strained:</strong> no penalty, but spending is risky.</li><li><strong>Critical:</strong> -1 die to actions relying on that resource.</li><li><strong>Crisis:</strong> the action may be impossible without substitute supply, sacrifice, trade, or a dangerous Violet-facing request.</li></ul>
+<p>Examples:</p>
+<ul><li>Oil Critical: -1 to expedition, gate, hospital-night, and lamp-grid actions.</li><li>Paper Critical: -1 to records, public notices, route declarations, and identity audits.</li><li>Trust Critical: -1 to curfews, rationing, service bans, and public language campaigns.</li><li>Labor Critical: -1 to patrols, construction, repairs, searches, hauling, and barricades.</li></ul>
+<hr>
+<h3 id="end-of-loop-upkeep">End-of-Loop Upkeep</h3>
+<p>At the end of each City Mode loop, ask what Bellweather relied on.</p>
+<p>Mark 1 pressure on each resource that was heavily used:</p>
+<ul><li><strong>Food</strong>, if the loop covered feeding crowds, refugees, labor crews, or ration strain.</li><li><strong>Oil / Light</strong>, if routes, gates, hospital wards, or night patrols were active.</li><li><strong>Medicine</strong>, if there were injuries, illness, surgery, sleep cases, or panic casualties.</li><li><strong>Paper / Records</strong>, if the town issued notices, route forms, ration cards, audits, or identity records.</li><li><strong>Labor</strong>, if crews worked dangerous shifts, patrols, repairs, searches, or construction.</li><li><strong>Public Trust</strong>, if the town used secrecy, force, rationing, bans, curfews, or controversial orders.</li></ul>
+<p>If a resource was protected, replenished, or carefully managed during the loop, do not mark pressure.</p>
+<p>If a resource was the focus of a successful civic action, reduce its pressure by 1 or create a temporary Surplus.</p>
+<p>The GM does not need to run an economy every loop.</p>
+<p>Ask what the town leaned on.</p>
+<hr>
+<h4 id="3-mission-framing">3. Mission Framing</h4>
+<p>Convert the chosen priority into playable scenes.</p>
+<p>If the priority is civic, frame a City Mode scene.</p>
+<p>If the priority requires leaving safety, frame an expedition.</p>
+<p>If the priority is public meaning, frame a meeting, sermon dispute, Gazette debate, school assembly, hospital crisis, or faction confrontation.</p>
+<p>For expeditions, define:</p>
+<ul><li>party members</li><li>destination</li><li>purpose</li><li>route</li><li>witnesses</li><li>anchors</li><li>return phrase</li><li>expected completion condition</li></ul>
+<p>For civic actions, define:</p>
+<ul><li>responsible institution</li><li>public declaration</li><li>resources spent</li><li>opposition</li><li>tracker at stake</li><li>possible misinterpretation</li></ul>
+<hr>
+<h3 id="expedition-triggers">Expedition Triggers</h3>
+<p>One loop usually produces <strong>zero or one</strong> expedition.</p>
+<p>Two expeditions in one loop means Bellweather is stretching itself.</p>
+<p>Three expeditions means something is going badly wrong.</p>
+<p>An expedition is triggered only when the civic action cannot be completed from town and must be resolved through direct danger, investigation, travel, or contact with the Violet.</p>
+<p>Before leaving City Mode, define:</p>
+<ul><li>destination</li><li>objective</li><li>personnel</li><li>route declaration</li><li>lantern or anchor assignments</li><li>public framing</li><li>return condition</li><li>what will happen if the party does not return</li></ul>
+<p>The city decides what must be done.</p>
+<p>The expedition discovers what that decision costs.</p>
+<hr>
+<h4 id="4-expedition-play">4. Expedition Play</h4>
+<p>Run the main body of the session using normal character-scale play.</p>
+<p>This may include:</p>
+<ul><li>investigation</li><li>interviews</li><li>archives</li><li>travel</li><li>route drift</li><li>combat</li><li>negotiation</li><li>dream contact</li><li>medical crisis</li><li>faction conflict</li><li>resource recovery</li><li>rescue</li><li>Continuity Stress</li></ul>
+<p>Keep the ordinary world visible.</p>
+<p>A strange event lands harder when it violates something concrete: a ledger, a bell, a ration line, a route form, a school roster, a hospital chart, a family photograph.</p>
+<hr>
+<h4 id="5-return-and-consequence">5. Return and Consequence</h4>
+<p>End by bringing the result back to Bellweather.</p>
+<p>Ask:</p>
+<ul><li>What did the players learn?</li><li>What did they fail to learn?</li><li>Who was helped?</li><li>Who was harmed?</li><li>What resource changed?</li><li>What rumor spreads?</li><li>What faction shifts?</li><li>What tracker moves?</li><li>What did the public now believe?</li><li>What did the Violet now learn?</li></ul>
+<p>This step is essential.</p>
+<p>Without return and consequence, Bellweather becomes a backdrop.</p>
+<p>With it, the town becomes the campaign.</p>
+<hr>
+<h3 id="between-session-updates">Between-Session Updates</h3>
+<p>Between sessions, the GM can quietly update:</p>
+<ul><li>clocks</li><li>faction intentions</li><li>public rumor</li><li>missing person lists</li><li>dream reports</li><li>resource strain</li><li>Violet response patterns</li><li>future trouble escalation</li></ul>
+<p>Do not overprepare every possible branch.</p>
+<p>Prepare pressure.</p>
+<p>Let the players decide where the pressure breaks.</p>
+<hr>
+<h3 id="session-opening-template">Session Opening Template</h3>
+<pre><code>Since last session:
+- [Resource or survival pressure]
+- [Public meaning or rumor pressure]
+- [Faction demand]
+- [Violet response or strange sign]
+- [Available civic action / expedition hook]</code></pre>
+<p>Example:</p>
+<pre><code>Since last session:
+- Mercy Hospital has opened a sleep ward.
+- The Gazette has received three letters calling the Violet an angel.
+- The Lampworkers’ Union refuses another night route without better oil priority.
+- The Eastgate route board added Crow Mill in violet chalk.
+- Town Hall needs a decision: ration oil, authorize the mill expedition, or regulate public sermons.</code></pre>
+<hr>
+<h3 id="session-closing-template">Session Closing Template</h3>
+<pre><code>At the end of the session:
+- [Clue learned]
+- [Resource changed]
+- [Person/faction affected]
+- [Public interpretation shifted]
+- [Tracker moved]
+- [New Violet behavior]
+- [Next pressure]</code></pre>
+<p>Example:</p>
+<pre><code>At the end of the session:
+- The party confirmed Crow Mill still exists, but its workers are counting shifts that never happened.
+- Two barrels of flour returned safely.
+- The mill foreman now distrusts Town Hall.
+- Public belief shifts toward Utility / Service because the Violet-supplied machinery worked.
+- Oil Clock drops by 1.
+- A payment notice appears in the mill office.
+- Next pressure: who pays for food the town did not produce?</code></pre>
+<hr>
+<h3 id="pacing-guidance">Pacing Guidance</h3>
+<p>A strong session usually needs:</p>
+<ul><li>one town-scale decision</li><li>one focused mission or civic conflict</li><li>one meaningful clue</li><li>one human cost</li><li>one Violet misinterpretation or response</li><li>one consequence that changes the next session</li></ul>
+<p>Do not try to resolve every tracker every session.</p>
+<p>Pick the pressure that matters now.</p>
+<hr>
+<h3 id="core-principle">Core Principle</h3>
+<blockquote><p>Start with Bellweather.</p><p>Choose what the town can bear.</p><p>Leave with purpose.</p><p>Return with consequence.</p></blockquote>
+          
+    <section>
+      <h2>Related Records</h2>
+      <div class="bw-card-grid">
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Introduction</div>
+            <h3 class="bw-card__title"><a href="../introduction/intro-campaign-thesis.html">Campaign Thesis</a></h3>
+            <p>States the campaign’s core thesis: Bellweather must survive long enough to teach a vast interpretive caretaker what home and care actually mean. Includes the table pitch, central play loop, and GM principles.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Civic Survival</div>
+            <h3 class="bw-card__title"><a href="../civic-survival/civic-actions.html">Civic Actions</a></h3>
+            <p>Defines the major civic action categories Bellweather can pursue, explains how town-scale action differs from character-scale action, and gives examples of actions, declarations, risks, and outcomes.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Civic Survival</div>
+            <h3 class="bw-card__title"><a href="../civic-survival/civic-resources.html">Resources</a></h3>
+            <p>Explains how Bellweather tracks and spends critical resources through clocks, surplus, shortage, upkeep, civic actions, and Violet misinterpretation risk.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Civic Survival</div>
+            <h3 class="bw-card__title"><a href="../civic-survival/civic-retainers.html">Retainers</a></h3>
+            <p>Explains how to use lightweight retainers, crews, deputies, clerks, workers, and specialists as civic extensions of Bellweather during dangerous missions and town-scale actions.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Field References</div>
+            <h3 class="bw-card__title"><a href="../appendix/handout-route-declaration.html">Route Declaration</a></h3>
+            <p>Cross-referenced municipal record.</p>
+          </article>
+        
+          <article class="bw-card">
+            <div class="bw-card__kicker">Field References</div>
+            <h3 class="bw-card__title"><a href="../appendix/quick-session-loop.html">Session Loop Quick Reference</a></h3>
+            <p>Cross-referenced municipal record.</p>
+          </article>
+        
+      </div>
+    </section>
+  
+
+          <footer class="bw-record-footer">
+            <div class="bw-record-footer__links">
+              <a href="../the-violet/violet-travel-doctrine.html">← Travel Doctrine</a>
+              <a href="../civic-survival/civic-actions.html">Civic Actions →</a>
+            </div>
+            <div class="bw-record-footer__stamp">
+              Bellweather municipal reference · draft · running_session_loop
+            </div>
+          </footer>
+        </article>
+      </main>
+    </div>
+  </div>
+  <script src="../assets/js/search.js" defer></script>
+</body>
+</html>
